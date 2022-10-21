@@ -4,7 +4,6 @@ D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.dll
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.pdb
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.AssemblyReference.cache
-D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Form1.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.GenerateResource.cache
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.GeneratedMSBuildEditorConfig.editorconfig
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.AssemblyInfoInputs.cache
@@ -15,3 +14,7 @@ D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.pdb
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.genruntimeconfig.cache
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\ref\CineProyectoUTN.dll
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Inicio.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Properties.Resources.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPersonal.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientes.resources
