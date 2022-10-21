@@ -18,3 +18,23 @@ D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Properties.Resources.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPersonal.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientes.resources
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.exe
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.deps.json
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.runtimeconfig.json
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.dll
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.pdb
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.AssemblyReference.cache
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientes.resources
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPersonal.resources
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Inicio.resources
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Properties.Resources.resources
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.GenerateResource.cache
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.AssemblyInfoInputs.cache
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.AssemblyInfo.cs
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.CoreCompileInputs.cache
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.dll
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\refint\CineProyectoUTN.dll
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.pdb
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.genruntimeconfig.cache
+C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\ref\CineProyectoUTN.dll
