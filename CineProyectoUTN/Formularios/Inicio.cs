@@ -25,5 +25,23 @@ namespace CineProyectoUTN
             FrmClientes frmCliente = new FrmClientes();
             frmCliente.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmPeliculas frmPeliculas = new FrmPeliculas();
+            frmPeliculas.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            FrmVentas frmVentas = new FrmVentas();
+            frmVentas.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmReservas frmReservas = new FrmReservas();
+            frmReservas.Show();
+        }
     }
 }

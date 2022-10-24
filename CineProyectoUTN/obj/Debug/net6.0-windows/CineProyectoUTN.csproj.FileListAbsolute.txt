@@ -18,3 +18,6 @@ D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Properties.Resources.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPersonal.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientes.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPeliculas.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmVentas.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmReservas.resources
