@@ -38,3 +38,7 @@ C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-wind
 C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.pdb
 C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.genruntimeconfig.cache
 C:\Users\Equipo\Desktop\TP\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\ref\CineProyectoUTN.dll
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPeliculas.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmReservas.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmVentas.resources
+D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.Funcion.resources

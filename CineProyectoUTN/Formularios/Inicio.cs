@@ -43,5 +43,11 @@ namespace CineProyectoUTN
             FrmReservas frmReservas = new FrmReservas();
             frmReservas.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Funcion frmFuncion = new Funcion();
+            frmFuncion.Show();
+        }
     }
 }
