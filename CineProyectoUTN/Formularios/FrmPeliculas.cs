@@ -21,5 +21,11 @@ namespace CineProyectoUTN.Formularios
         {
 
         }
+
+        private void recaudacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRecaudacionPelicula frmRecaudacionPelicula = new FrmRecaudacionPelicula();
+            frmRecaudacionPelicula.Show();
+        }
     }
 }

@@ -16,5 +16,17 @@ namespace CineProyectoUTN.Formularios
         {
             InitializeComponent();
         }
+
+        private void cantidadDeSociosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCantidadSocios frmCantidadSocios = new FrmCantidadSocios();
+            frmCantidadSocios.Show();
+        }
+
+        private void clientesExtranjerosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmClientesExtranjeros frmClientesExtranjeros = new FrmClientesExtranjeros();
+            frmClientesExtranjeros.Show();
+        }
     }
 }

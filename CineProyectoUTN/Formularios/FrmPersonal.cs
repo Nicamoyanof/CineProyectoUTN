@@ -16,5 +16,11 @@ namespace CineProyectoUTN.Formularios
         {
             InitializeComponent();
         }
+
+        private void vacacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEmpleadosVacaciones frmEmpleadosVacaciones = new FrmEmpleadosVacaciones();
+            frmEmpleadosVacaciones.Show();
+        }
     }
 }
