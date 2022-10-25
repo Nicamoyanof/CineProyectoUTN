@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace CineProyectoUTN.Formularios
 {
-    public partial class FrmReservas : Form
+    public partial class FrmRecaudacionPelicula : Form
     {
-        public FrmReservas()
+        public FrmRecaudacionPelicula()
         {
             InitializeComponent();
-        }
-
-        private void porGeneroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmReservaPorGenero frmReservaPorGenero = new FrmReservaPorGenero();
-            frmReservaPorGenero.Show();
         }
     }
 }

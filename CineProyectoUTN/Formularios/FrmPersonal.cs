@@ -33,5 +33,11 @@ namespace CineProyectoUTN.Formularios
             comboBox2.DisplayMember = "nombre_ciudad";
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
         }
+
+        private void vacacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEmpleadosVacaciones frmEmpleadosVacaciones = new FrmEmpleadosVacaciones();
+            frmEmpleadosVacaciones.Show();
+        }
     }
 }
