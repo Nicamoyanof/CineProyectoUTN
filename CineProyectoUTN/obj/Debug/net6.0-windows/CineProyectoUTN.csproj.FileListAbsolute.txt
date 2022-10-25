@@ -121,3 +121,41 @@ C:\Users\Gabriel\Desktop\Programación - UTN\Laboratorio de computacion II\Traba
 C:\Users\Gabriel\Desktop\Programación - UTN\Laboratorio de computacion II\Trabajo practico\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.pdb
 C:\Users\Gabriel\Desktop\Programación - UTN\Laboratorio de computacion II\Trabajo practico\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.genruntimeconfig.cache
 C:\Users\Gabriel\Desktop\Programación - UTN\Laboratorio de computacion II\Trabajo practico\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\ref\CineProyectoUTN.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.exe
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.deps.json
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.runtimeconfig.json
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.pdb
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.AssemblyReference.cache
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmCantidadSocios.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClienteFuncion.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientes.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientesExtranjeros.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmEmpleadosVacaciones.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.Funcion.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmGastoPromedio.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPeliculas.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmPersonal.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmRecaudacionPelicula.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmReservaPorGenero.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmReservas.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmVentas.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Inicio.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Properties.Resources.resources
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.GenerateResource.cache
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.AssemblyInfoInputs.cache
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.AssemblyInfo.cs
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.CoreCompileInputs.cache
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.csproj.CopyComplete
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\refint\CineProyectoUTN.dll
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.pdb
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.genruntimeconfig.cache
+C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\ref\CineProyectoUTN.dll

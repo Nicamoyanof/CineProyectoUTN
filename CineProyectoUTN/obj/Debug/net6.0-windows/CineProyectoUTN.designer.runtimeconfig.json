@@ -12,8 +12,9 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Gabriel\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Gabriel\\.nuget\\packages"
+      "C:\\Users\\Equipo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Equipo\\.nuget\\packages",
+      "D:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

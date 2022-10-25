@@ -1,27 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
+    "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
+    "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+        "projectUniqueName": "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
         "projectName": "CineProyectoUTN",
-        "projectPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
+        "projectPath": "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+        "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,8 +56,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

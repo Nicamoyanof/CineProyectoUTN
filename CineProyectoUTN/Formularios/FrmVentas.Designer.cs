@@ -32,7 +32,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboFormaPago = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,15 +40,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvTickets = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.socio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cboFuncion = new System.Windows.Forms.ComboBox();
+            this.cboCliente = new System.Windows.Forms.ComboBox();
+            this.cboEmpleado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filtroPorEdadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTickets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -104,13 +104,13 @@
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cboFormaPago
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(624, 217);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 23);
-            this.comboBox1.TabIndex = 41;
+            this.cboFormaPago.FormattingEnabled = true;
+            this.cboFormaPago.Location = new System.Drawing.Point(624, 217);
+            this.cboFormaPago.Name = "cboFormaPago";
+            this.cboFormaPago.Size = new System.Drawing.Size(273, 23);
+            this.cboFormaPago.TabIndex = 41;
             // 
             // label9
             // 
@@ -175,24 +175,24 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Tickets:";
             // 
-            // dataGridView1
+            // dgvTickets
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTickets.AllowUserToAddRows = false;
+            this.dgvTickets.AllowUserToDeleteRows = false;
+            this.dgvTickets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTickets.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.cliente,
             this.empleado,
             this.pelicula,
             this.socio});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 89);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(434, 313);
-            this.dataGridView1.TabIndex = 24;
+            this.dgvTickets.Location = new System.Drawing.Point(12, 89);
+            this.dgvTickets.Name = "dgvTickets";
+            this.dgvTickets.ReadOnly = true;
+            this.dgvTickets.RowHeadersVisible = false;
+            this.dgvTickets.RowTemplate.Height = 25;
+            this.dgvTickets.Size = new System.Drawing.Size(434, 313);
+            this.dgvTickets.TabIndex = 24;
             // 
             // id
             // 
@@ -225,29 +225,29 @@
             this.socio.Name = "socio";
             this.socio.ReadOnly = true;
             // 
-            // comboBox3
+            // cboFuncion
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(623, 101);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(273, 23);
-            this.comboBox3.TabIndex = 47;
+            this.cboFuncion.FormattingEnabled = true;
+            this.cboFuncion.Location = new System.Drawing.Point(623, 101);
+            this.cboFuncion.Name = "cboFuncion";
+            this.cboFuncion.Size = new System.Drawing.Size(273, 23);
+            this.cboFuncion.TabIndex = 47;
             // 
-            // comboBox4
+            // cboCliente
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(623, 130);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(273, 23);
-            this.comboBox4.TabIndex = 48;
+            this.cboCliente.FormattingEnabled = true;
+            this.cboCliente.Location = new System.Drawing.Point(623, 130);
+            this.cboCliente.Name = "cboCliente";
+            this.cboCliente.Size = new System.Drawing.Size(273, 23);
+            this.cboCliente.TabIndex = 48;
             // 
-            // comboBox5
+            // cboEmpleado
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(624, 159);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(273, 23);
-            this.comboBox5.TabIndex = 50;
+            this.cboEmpleado.FormattingEnabled = true;
+            this.cboEmpleado.Location = new System.Drawing.Point(624, 159);
+            this.cboEmpleado.Name = "cboEmpleado";
+            this.cboEmpleado.Size = new System.Drawing.Size(273, 23);
+            this.cboEmpleado.TabIndex = 50;
             // 
             // label5
             // 
@@ -333,6 +333,7 @@
             this.filtroPorEdadToolStripMenuItem.Name = "filtroPorEdadToolStripMenuItem";
             this.filtroPorEdadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.filtroPorEdadToolStripMenuItem.Text = "Filtro por edad";
+            this.filtroPorEdadToolStripMenuItem.Click += new System.EventHandler(this.filtroPorEdadToolStripMenuItem_Click);
             // 
             // FrmVentas
             // 
@@ -345,15 +346,15 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.cboEmpleado);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cboCliente);
+            this.Controls.Add(this.cboFuncion);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboFormaPago);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.label8);
@@ -361,13 +362,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvTickets);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tickets";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmVentas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTickets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -382,7 +384,7 @@
         private Button button3;
         private Button button2;
         private Button button1;
-        private ComboBox comboBox1;
+        private ComboBox cboFormaPago;
         private Label label9;
         private DateTimePicker dateTimePicker2;
         private Label label8;
@@ -390,15 +392,15 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvTickets;
         private DataGridViewTextBoxColumn id;
         private DataGridViewTextBoxColumn cliente;
         private DataGridViewTextBoxColumn empleado;
         private DataGridViewTextBoxColumn pelicula;
         private DataGridViewTextBoxColumn socio;
-        private ComboBox comboBox3;
-        private ComboBox comboBox4;
-        private ComboBox comboBox5;
+        private ComboBox cboFuncion;
+        private ComboBox cboCliente;
+        private ComboBox cboEmpleado;
         private Label label5;
         private Label label6;
         private TextBox textBox1;
