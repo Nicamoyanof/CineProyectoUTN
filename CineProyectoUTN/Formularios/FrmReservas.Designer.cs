@@ -30,37 +30,37 @@
         {
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numCantTicket = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboCliente = new System.Windows.Forms.ComboBox();
+            this.cboFuncion = new System.Windows.Forms.ComboBox();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.cboFomaPago = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpReserva = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvResetcas = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fec_reserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.socio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpConfirmacion = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porGeneroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCantTicket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResetcas)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,12 +84,12 @@
             this.label10.TabIndex = 78;
             this.label10.Text = "Precio total: $";
             // 
-            // numericUpDown1
+            // numCantTicket
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(625, 264);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(272, 23);
-            this.numericUpDown1.TabIndex = 77;
+            this.numCantTicket.Location = new System.Drawing.Point(625, 264);
+            this.numCantTicket.Name = "numCantTicket";
+            this.numCantTicket.Size = new System.Drawing.Size(272, 23);
+            this.numCantTicket.TabIndex = 77;
             // 
             // label7
             // 
@@ -100,12 +100,12 @@
             this.label7.TabIndex = 76;
             this.label7.Text = "Cantidad de tickets:";
             // 
-            // textBox1
+            // txtPrecio
             // 
-            this.textBox1.Location = new System.Drawing.Point(625, 234);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(273, 23);
-            this.textBox1.TabIndex = 75;
+            this.txtPrecio.Location = new System.Drawing.Point(625, 234);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(273, 23);
+            this.txtPrecio.TabIndex = 75;
             // 
             // label6
             // 
@@ -116,69 +116,69 @@
             this.label6.TabIndex = 74;
             this.label6.Text = "Precio entrada:";
             // 
-            // comboBox4
+            // cboCliente
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(624, 120);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(273, 23);
-            this.comboBox4.TabIndex = 71;
+            this.cboCliente.FormattingEnabled = true;
+            this.cboCliente.Location = new System.Drawing.Point(624, 120);
+            this.cboCliente.Name = "cboCliente";
+            this.cboCliente.Size = new System.Drawing.Size(273, 23);
+            this.cboCliente.TabIndex = 71;
             // 
-            // comboBox3
+            // cboFuncion
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(624, 91);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(273, 23);
-            this.comboBox3.TabIndex = 70;
+            this.cboFuncion.FormattingEnabled = true;
+            this.cboFuncion.Location = new System.Drawing.Point(624, 91);
+            this.cboFuncion.Name = "cboFuncion";
+            this.cboFuncion.Size = new System.Drawing.Size(273, 23);
+            this.cboFuncion.TabIndex = 70;
             // 
-            // button4
+            // btnBorrar
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(815, 361);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 31);
-            this.button4.TabIndex = 69;
-            this.button4.Text = "Borrar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBorrar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBorrar.Location = new System.Drawing.Point(815, 361);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(83, 31);
+            this.btnBorrar.TabIndex = 69;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnAgregar
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(718, 361);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 31);
-            this.button3.TabIndex = 68;
-            this.button3.Text = "Agregar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregar.Location = new System.Drawing.Point(718, 361);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(83, 31);
+            this.btnAgregar.TabIndex = 68;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(621, 361);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 31);
-            this.button2.TabIndex = 67;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEditar.Location = new System.Drawing.Point(621, 361);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(83, 31);
+            this.btnEditar.TabIndex = 67;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCancelar
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(522, 361);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 31);
-            this.button1.TabIndex = 66;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(522, 361);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(83, 31);
+            this.btnCancelar.TabIndex = 66;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cboFomaPago
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(625, 205);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 23);
-            this.comboBox1.TabIndex = 65;
+            this.cboFomaPago.FormattingEnabled = true;
+            this.cboFomaPago.Location = new System.Drawing.Point(625, 205);
+            this.cboFomaPago.Name = "cboFomaPago";
+            this.cboFomaPago.Size = new System.Drawing.Size(273, 23);
+            this.cboFomaPago.TabIndex = 65;
             // 
             // label9
             // 
@@ -189,12 +189,12 @@
             this.label9.TabIndex = 64;
             this.label9.Text = "Forma de pago:";
             // 
-            // dateTimePicker2
+            // dtpReserva
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(625, 149);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(272, 23);
-            this.dateTimePicker2.TabIndex = 63;
+            this.dtpReserva.Location = new System.Drawing.Point(625, 149);
+            this.dtpReserva.Name = "dtpReserva";
+            this.dtpReserva.Size = new System.Drawing.Size(272, 23);
+            this.dtpReserva.TabIndex = 63;
             // 
             // label8
             // 
@@ -243,24 +243,24 @@
             this.label1.TabIndex = 58;
             this.label1.Text = "Reservas:";
             // 
-            // dataGridView1
+            // dgvResetcas
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvResetcas.AllowUserToAddRows = false;
+            this.dgvResetcas.AllowUserToDeleteRows = false;
+            this.dgvResetcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResetcas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.cliente,
             this.fec_reserva,
             this.pelicula,
             this.socio});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(434, 313);
-            this.dataGridView1.TabIndex = 57;
+            this.dgvResetcas.Location = new System.Drawing.Point(13, 79);
+            this.dgvResetcas.Name = "dgvResetcas";
+            this.dgvResetcas.ReadOnly = true;
+            this.dgvResetcas.RowHeadersVisible = false;
+            this.dgvResetcas.RowTemplate.Height = 25;
+            this.dgvResetcas.Size = new System.Drawing.Size(434, 313);
+            this.dgvResetcas.TabIndex = 57;
             // 
             // id
             // 
@@ -293,12 +293,12 @@
             this.socio.Name = "socio";
             this.socio.ReadOnly = true;
             // 
-            // dateTimePicker1
+            // dtpConfirmacion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(625, 178);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(272, 23);
-            this.dateTimePicker1.TabIndex = 81;
+            this.dtpConfirmacion.Location = new System.Drawing.Point(625, 178);
+            this.dtpConfirmacion.Name = "dtpConfirmacion";
+            this.dtpConfirmacion.Size = new System.Drawing.Size(272, 23);
+            this.dtpConfirmacion.TabIndex = 81;
             // 
             // label5
             // 
@@ -330,7 +330,7 @@
             // porGeneroToolStripMenuItem
             // 
             this.porGeneroToolStripMenuItem.Name = "porGeneroToolStripMenuItem";
-            this.porGeneroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porGeneroToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.porGeneroToolStripMenuItem.Text = "Genero de pelicula";
             this.porGeneroToolStripMenuItem.Click += new System.EventHandler(this.porGeneroToolStripMenuItem_Click);
             // 
@@ -339,36 +339,37 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 411);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpConfirmacion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numCantTicket);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboCliente);
+            this.Controls.Add(this.cboFuncion);
+            this.Controls.Add(this.btnBorrar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.cboFomaPago);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dtpReserva);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvResetcas);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmReservas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmReservas";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmReservas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numCantTicket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResetcas)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -380,31 +381,31 @@
 
         private Label label11;
         private Label label10;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown numCantTicket;
         private Label label7;
-        private TextBox textBox1;
+        private TextBox txtPrecio;
         private Label label6;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private ComboBox comboBox1;
+        private ComboBox cboCliente;
+        private ComboBox cboFuncion;
+        private Button btnBorrar;
+        private Button btnAgregar;
+        private Button btnEditar;
+        private Button btnCancelar;
+        private ComboBox cboFomaPago;
         private Label label9;
-        private DateTimePicker dateTimePicker2;
+        private DateTimePicker dtpReserva;
         private Label label8;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvResetcas;
         private DataGridViewTextBoxColumn id;
         private DataGridViewTextBoxColumn cliente;
         private DataGridViewTextBoxColumn fec_reserva;
         private DataGridViewTextBoxColumn pelicula;
         private DataGridViewTextBoxColumn socio;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpConfirmacion;
         private Label label5;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem consultasToolStripMenuItem;
