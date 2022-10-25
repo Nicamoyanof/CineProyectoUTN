@@ -1,3 +1,4 @@
+using CineProyectoUTN.Dominios;
 using CineProyectoUTN.Formularios;
 
 namespace CineProyectoUTN
@@ -20,11 +21,11 @@ namespace CineProyectoUTN
             frmPersonal.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            FrmClientes frmCliente = new FrmClientes();
-            frmCliente.Show();
-        }
+        //private void button7_Click(object sender, EventArgs e)
+        //{
+        //    FrmClientes frmCliente = new FrmClientes();
+        //    frmCliente.Show();
+        //}
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -48,6 +49,12 @@ namespace CineProyectoUTN
         {
             Funcion frmFuncion = new Funcion();
             frmFuncion.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmClientes frmClientes = new FrmClientes();
+            frmClientes.Show();
         }
     }
 }

@@ -32,12 +32,19 @@ namespace CineProyectoUTN.Formularios
             comboBox2.ValueMember = "id_ciudad";
             comboBox2.DisplayMember = "nombre_ciudad";
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            DataTable tabla = oDatos.consultaSql("select * from Empleados");
+            dataGridView1.DataSource = tabla;
         }
 
         private void vacacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmEmpleadosVacaciones frmEmpleadosVacaciones = new FrmEmpleadosVacaciones();
             frmEmpleadosVacaciones.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

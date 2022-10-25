@@ -83,3 +83,10 @@ D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmReservaPorGenero.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientesExtranjeros.resources
 >>>>>>> f87d2cd1f5e575f2f7136d4550930aef32af5900
+C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmCantidadSocios.resources
+C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClienteFuncion.resources
+C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmClientesExtranjeros.resources
+C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmEmpleadosVacaciones.resources
+C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmGastoPromedio.resources
+C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmRecaudacionPelicula.resources
+C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmReservaPorGenero.resources

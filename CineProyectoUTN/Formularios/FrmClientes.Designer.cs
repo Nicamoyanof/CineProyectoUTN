@@ -42,11 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fec_nac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.socio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -57,12 +52,19 @@
             this.gastoPromedioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantidadDeSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesExtranjerosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fec_nac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.socio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
             // 
+            this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(768, 359);
             this.button4.Name = "button4";
@@ -73,6 +75,7 @@
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.Location = new System.Drawing.Point(671, 359);
             this.button3.Name = "button3";
@@ -83,6 +86,7 @@
             // 
             // button2
             // 
+            this.button2.Enabled = false;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(574, 359);
             this.button2.Name = "button2";
@@ -100,6 +104,7 @@
             this.button1.TabIndex = 43;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -112,15 +117,16 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(579, 159);
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(603, 159);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(272, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(248, 23);
             this.dateTimePicker1.TabIndex = 32;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(467, 165);
+            this.label5.Location = new System.Drawing.Point(491, 165);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 15);
             this.label5.TabIndex = 31;
@@ -128,6 +134,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(579, 121);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 23);
@@ -144,6 +151,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(579, 83);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(272, 23);
@@ -182,55 +190,30 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.nombre,
+            this.Apellido,
             this.fec_nac,
             this.email,
             this.socio});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(434, 313);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(447, 305);
             this.dataGridView1.TabIndex = 24;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 30;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            // 
-            // fec_nac
-            // 
-            this.fec_nac.HeaderText = "Nacimiento";
-            this.fec_nac.Name = "fec_nac";
-            this.fec_nac.ReadOnly = true;
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // socio
-            // 
-            this.socio.HeaderText = "Socio";
-            this.socio.Name = "socio";
-            this.socio.ReadOnly = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Enabled = false;
             this.radioButton1.Location = new System.Drawing.Point(579, 273);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(73, 19);
@@ -242,6 +225,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Enabled = false;
             this.radioButton2.Location = new System.Drawing.Point(579, 298);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(54, 19);
@@ -252,6 +236,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(579, 235);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(272, 23);
@@ -268,6 +253,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(579, 197);
             this.comboBox1.Name = "comboBox1";
@@ -297,22 +283,60 @@
             // gastoPromedioToolStripMenuItem
             // 
             this.gastoPromedioToolStripMenuItem.Name = "gastoPromedioToolStripMenuItem";
-            this.gastoPromedioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gastoPromedioToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.gastoPromedioToolStripMenuItem.Text = "Gasto promedio";
             // 
             // cantidadDeSociosToolStripMenuItem
             // 
             this.cantidadDeSociosToolStripMenuItem.Name = "cantidadDeSociosToolStripMenuItem";
-            this.cantidadDeSociosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cantidadDeSociosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.cantidadDeSociosToolStripMenuItem.Text = "Cantidad de socios";
             this.cantidadDeSociosToolStripMenuItem.Click += new System.EventHandler(this.cantidadDeSociosToolStripMenuItem_Click);
             // 
             // clientesExtranjerosToolStripMenuItem
             // 
             this.clientesExtranjerosToolStripMenuItem.Name = "clientesExtranjerosToolStripMenuItem";
-            this.clientesExtranjerosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesExtranjerosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.clientesExtranjerosToolStripMenuItem.Text = "Clientes extranjeros";
             this.clientesExtranjerosToolStripMenuItem.Click += new System.EventHandler(this.clientesExtranjerosToolStripMenuItem_Click);
+            // 
+            // id
+            // 
+            this.id.HeaderText = "";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 10;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
+            // 
+            // fec_nac
+            // 
+            this.fec_nac.HeaderText = "Nacimiento";
+            this.fec_nac.Name = "fec_nac";
+            this.fec_nac.ReadOnly = true;
+            // 
+            // email
+            // 
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            // 
+            // socio
+            // 
+            this.socio.HeaderText = "Socio";
+            this.socio.Name = "socio";
+            this.socio.ReadOnly = true;
+            this.socio.Width = 50;
             // 
             // FrmClientes
             // 
@@ -368,11 +392,6 @@
         private Label label2;
         private Label label1;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn id;
-        private DataGridViewTextBoxColumn nombre;
-        private DataGridViewTextBoxColumn fec_nac;
-        private DataGridViewTextBoxColumn email;
-        private DataGridViewTextBoxColumn socio;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private TextBox textBox4;
@@ -383,5 +402,11 @@
         private ToolStripMenuItem gastoPromedioToolStripMenuItem;
         private ToolStripMenuItem cantidadDeSociosToolStripMenuItem;
         private ToolStripMenuItem clientesExtranjerosToolStripMenuItem;
+        private DataGridViewTextBoxColumn id;
+        private DataGridViewTextBoxColumn nombre;
+        private DataGridViewTextBoxColumn Apellido;
+        private DataGridViewTextBoxColumn fec_nac;
+        private DataGridViewTextBoxColumn email;
+        private DataGridViewTextBoxColumn socio;
     }
 }

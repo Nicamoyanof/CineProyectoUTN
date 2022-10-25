@@ -11,17 +11,21 @@ namespace CineProyectoUTN.Datos
     internal class Helper
     {
         SqlConnection conexion = new SqlConnection(Properties.Resources.StringConex);
-        SqlCommand comando = new SqlCommand();
+
         public DataTable consultaSql(string ConsultaSql)
         {
             try
             {
                 conexion.Open();
                 DataTable tabla = new DataTable();
+                SqlCommand comando = new SqlCommand();
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.Text;
                 comando.CommandText = ConsultaSql;
                 tabla.Load(comando.ExecuteReader());
+                SqlDataAdapter adapt = new SqlDataAdapter();
+                adapt.SelectCommand = comando;
+                adapt.Fill(tabla);
                 conexion.Close();
                 return tabla;
             }
