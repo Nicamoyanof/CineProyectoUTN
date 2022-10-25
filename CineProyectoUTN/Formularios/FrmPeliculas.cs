@@ -149,6 +149,57 @@ namespace CineProyectoUTN.Formularios
             rbDieciocho.Checked = false;
             HabilitarEdicion(true);
         }
+
+        private void SeleccionarPoster(Peliculas peliculas)
+        {
+            switch (peliculas.Nombre)
+            {
+                case "American History X":
+                    break;
+                case "Infiltrados":
+                    break;
+                case "Sospechosos habituales":
+                    break;
+                case "El truco final":
+                    break;
+                case "Casablanca":
+                    break;
+                case "Whiplash":
+                    break;
+                case "Intocable":
+                    break;
+                case "La tumba de las luciérnagas":
+                    break;
+                case "Hasta que llegó su hora":
+                    break;
+                case "La ventana indiscreta":
+                    break;
+                case "Alien":
+                    break;
+                case "Luces de la ciudad":
+                    break;
+                case "Cinema Paradiso":
+                    break;
+                case "Apocalypse Now":
+                    break;
+                case "Memento":
+                    break;
+                case "En busca del arca perdida":
+                    break;
+                case "Django desencadenado":
+                    break;
+                case "La vida de los otros":
+                    break;
+                case "WALL·E":
+                    break;
+                case "Senderos de gloria":
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
     }
 
 }
