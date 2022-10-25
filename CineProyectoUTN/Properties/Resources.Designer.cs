@@ -61,7 +61,7 @@ namespace CineProyectoUTN.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=localhost;Initial Catalog=CINE;Integrated Security=True.
+        ///   Busca una cadena traducida similar a Data Source=KELYX-KL3450\SQLEXPRESS;Initial Catalog=CINE;Integrated Security=True.
         /// </summary>
         internal static string StringConex {
             get {
