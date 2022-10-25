@@ -7,14 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CineProyectoUTN.Dominios;
 
 namespace CineProyectoUTN.Formularios
 {
     public partial class Funcion : Form
     {
+
+        List<Asientos> lAsientos = new List<Asientos>();
+
         public Funcion()
         {
             InitializeComponent();
+
+            for (int i = 1; i <= 20; i++)
+            {
+                lAsientos.Add(new Asientos(i, true));
+            }
+
+            lAsientos[5].Disponible = false;
+            lAsientos[9].Disponible = false;
+            lAsientos[12].Disponible = false;
+            lAsientos[19].Disponible = false;
+            lAsientos[1].Disponible = false;
+            lAsientos[2].Disponible = false;
+            lAsientos[11].Disponible = false;
+
+
         }
 
         private void Funcion_Load(object sender, EventArgs e)
@@ -25,16 +44,31 @@ namespace CineProyectoUTN.Formularios
 
         private void CargarAsientos()
         {
-            //int[] ints = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15,16,17,18,19,20 };
+            int asiento = 0;
+            for (int i = 0; i < lAsientos.Count() / 4; i++)
+            {
 
-            //for (int i = 0; i < ints.Length; i++)
-            //{
-            //    for (int j = 0; j < 4; j++)
-            //    {
-            //        dgvAsientos.Rows;
-            //    }
-            //}
+                dgvAsientos.Rows.Add(
+                lAsientos[asiento].NumeroAsiento,
+                lAsientos[asiento + 1].NumeroAsiento,
+                lAsientos[asiento + 2].NumeroAsiento,
+                lAsientos[asiento + 3].NumeroAsiento);
 
+                for (int j = 0; j < 4; j++)
+                {
+
+                    if (!lAsientos[j + i * 4].Disponible)
+                    {
+
+                        dgvAsientos.Rows[i].Cells[j].Style.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        dgvAsientos.Rows[i].Cells[j].Style.BackColor = Color.Green;
+                    }
+                }
+                asiento += 4;
+            }
         }
 
     }
