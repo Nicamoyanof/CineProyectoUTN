@@ -40,9 +40,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(154, 30);
+            this.label1.Location = new System.Drawing.Point(176, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(448, 37);
+            this.label1.Size = new System.Drawing.Size(567, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "TOTAL RECAUDADO POR PELICULA";
             // 
@@ -55,17 +55,20 @@
             this.pelicula,
             this.genero,
             this.total_recaudado});
-            this.dataGridView1.Location = new System.Drawing.Point(136, 82);
+            this.dataGridView1.Location = new System.Drawing.Point(155, 109);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(505, 294);
+            this.dataGridView1.Size = new System.Drawing.Size(577, 392);
             this.dataGridView1.TabIndex = 1;
             // 
             // pelicula
             // 
             this.pelicula.HeaderText = "Pelicula";
+            this.pelicula.MinimumWidth = 6;
             this.pelicula.Name = "pelicula";
             this.pelicula.ReadOnly = true;
             this.pelicula.Width = 200;
@@ -73,6 +76,7 @@
             // genero
             // 
             this.genero.HeaderText = "Genero";
+            this.genero.MinimumWidth = 6;
             this.genero.Name = "genero";
             this.genero.ReadOnly = true;
             this.genero.Width = 150;
@@ -80,19 +84,22 @@
             // total_recaudado
             // 
             this.total_recaudado.HeaderText = "Total Recaudado";
+            this.total_recaudado.MinimumWidth = 6;
             this.total_recaudado.Name = "total_recaudado";
             this.total_recaudado.ReadOnly = true;
             this.total_recaudado.Width = 150;
             // 
             // FrmRecaudacionPelicula
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmRecaudacionPelicula";
             this.Text = "FrmRecaudacionPelicula";
+            this.Load += new System.EventHandler(this.FrmRecaudacionPelicula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -81,7 +81,7 @@ namespace CineProyectoUTN.Formularios
 
         public void CargarFuncion()
         {
-
+            dgvFunciones.Rows.Clear();
             DataTable table = helper.consultaSql("SELECT * FROM Funciones WHERE DAY(horario) = 01");
 
             foreach (DataRow dataRow in table.Rows)
