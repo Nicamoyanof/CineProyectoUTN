@@ -10,13 +10,13 @@ namespace CineProyectoUTN.Dominios
     {
         public Reservas()
         {
-            Cliente = new Clientes();
+            cliente = new Clientes();
             Pelicula = new Peliculas();
             FechaReserva = DateTime.Now;
             HoraConfirmacion = DateTime.Now;
         }
 
-        public Clientes Cliente { get; set; }
+        public Clientes cliente { get; set; }
         public Peliculas Pelicula { get; set; }
         public DateTime FechaReserva { get; set; }
         public DateTime HoraConfirmacion { get; set; }

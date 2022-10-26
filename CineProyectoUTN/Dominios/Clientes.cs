@@ -24,6 +24,10 @@ namespace CineProyectoUTN.Dominios
              this.Socio = socio;
         }
 
+        public Clientes()
+        {
+        }
+
         public override string ToString()
         {
             return Apellido + " " + Nombre;

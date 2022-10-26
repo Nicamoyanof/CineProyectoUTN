@@ -17,9 +17,6 @@ namespace CineProyectoUTN.Formularios
     public partial class FrmReservas : Form
     {
         Helper helper;
-        List<Reservas> lReservas = new List<Reservas>();
-        List<Peliculas> lPeliculas = new List<Peliculas>();
-        List<Clientes> lClientes = new List<Clientes>();
         public FrmReservas()
         {
             InitializeComponent();
@@ -71,26 +68,15 @@ namespace CineProyectoUTN.Formularios
             cbo.DisplayMember = display;
             cbo.ValueMember = value;
         }
-        private void btnCancelar_Click(object sender, EventArgs e)
+
+        private void dgvReservas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            habilitar(true);
+            cboCliente.Text = dgvReservas.CurrentRow.Cells[0].Value.ToString();
+            dtpReserva.Text = dgvReservas.CurrentRow.Cells[1].Value.ToString();
+            cboFuncion.Text = dgvReservas.CurrentRow.Cells[2].Value.ToString();
+            dtpConfirmacion.Text = dgvReservas.CurrentRow.Cells[1].Value.ToString();
+
+
         }
-
-        //private void dgvReservas_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    int index = int.Parse(dgvReservas.CurrentRow.Cells[0].Value.ToString());
-        //    Reservas ReservaSeleccionada = lReservas[index - 1];
-        //    SeleccionarPelicula(ReservaSeleccionada);
-        //}
-
-        //private void SeleccionarPelicula(Reservas reserva)
-        //{
-        //    cboCliente.Text = reserva.Cliente.ToString();
-        //    cboFuncion.Text = reserva.Pelicula.ToString();
-        //    dtpConfirmacion.Text = reserva.HoraConfirmacion.ToString();
-        //    dtpReserva.Text = reserva.FechaReserva.ToString();
-        //    //Faltan agregar
-        //}
-
     }
 }

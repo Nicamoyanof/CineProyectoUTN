@@ -287,6 +287,7 @@
             this.dgvReservas.RowTemplate.Height = 25;
             this.dgvReservas.Size = new System.Drawing.Size(447, 291);
             this.dgvReservas.TabIndex = 83;
+            this.dgvReservas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellContentClick);
             // 
             // FrmReservas
             // 
