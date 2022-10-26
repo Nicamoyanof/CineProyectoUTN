@@ -43,6 +43,7 @@ namespace CineProyectoUTN.Formularios
 
         public void CargarPeliculas()
         {
+            dgvPeliculas.Rows.Clear();
             DataTable table = helper.consultaSql("SELECT * FROM PELICULAS");
             foreach (DataRow dr in table.Rows)
             {

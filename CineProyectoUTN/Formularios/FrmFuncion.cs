@@ -81,7 +81,7 @@ namespace CineProyectoUTN.Formularios
 
         public void CargarFuncion()
         {
-
+            dgvFunciones.Rows.Clear();
             DataTable table = helper.consultaSql("SELECT * FROM Funciones WHERE DAY(horario) = 01");
 
             foreach (DataRow dataRow in table.Rows)
@@ -233,6 +233,12 @@ namespace CineProyectoUTN.Formularios
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             HabilitarEdicion(true);
+        }
+
+        private void entradasVendidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmClienteFuncion frmClienteFuncion = new FrmClienteFuncion();
+            frmClienteFuncion.Show();
         }
     }
 }

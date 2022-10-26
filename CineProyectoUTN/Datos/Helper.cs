@@ -12,6 +12,26 @@ namespace CineProyectoUTN.Datos
     {
         SqlConnection conexion = new SqlConnection(Properties.Resources.StringConex);
 
+        public DataTable ConsultaSQLSP(string spNombre, List<Parametro> values)
+        {
+            DataTable tabla = new DataTable();
+
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand(spNombre, conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (values != null)
+            {
+                foreach (Parametro oParametro in values)
+                {
+                    cmd.Parameters.AddWithValue(oParametro.Clave, oParametro.Valor);
+                }
+            }
+            tabla.Load(cmd.ExecuteReader());
+            conexion.Close();
+
+            return tabla;
+        }
+
         public DataTable consultaSql(string ConsultaSql)
         {
             try
@@ -23,9 +43,6 @@ namespace CineProyectoUTN.Datos
                 comando.CommandType = CommandType.Text;
                 comando.CommandText = ConsultaSql;
                 tabla.Load(comando.ExecuteReader());
-                SqlDataAdapter adapt = new SqlDataAdapter();
-                adapt.SelectCommand = comando;
-                adapt.Fill(tabla);
                 conexion.Close();
                 return tabla;
             }

@@ -311,8 +311,9 @@
             // entradasVendidasToolStripMenuItem
             // 
             this.entradasVendidasToolStripMenuItem.Name = "entradasVendidasToolStripMenuItem";
-            this.entradasVendidasToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.entradasVendidasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.entradasVendidasToolStripMenuItem.Text = "Entradas vendidas";
+            this.entradasVendidasToolStripMenuItem.Click += new System.EventHandler(this.entradasVendidasToolStripMenuItem_Click);
             // 
             // Funcion
             // 
