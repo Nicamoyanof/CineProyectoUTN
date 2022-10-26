@@ -1,39 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
+    "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
+    "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
         "projectName": "CineProyectoUTN",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
-=======
-    "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-        "projectName": "CineProyectoUTN",
-        "projectPath": "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-        "packagesPath": "C:\\Users\\Matías\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
+        "projectPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-          "C:\\Users\\Matías\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

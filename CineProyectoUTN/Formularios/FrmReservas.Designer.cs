@@ -48,20 +48,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvResetcas = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fec_reserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.socio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtpConfirmacion = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porGeneroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dgvReservas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.numCantTicket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResetcas)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -243,56 +238,6 @@
             this.label1.TabIndex = 58;
             this.label1.Text = "Reservas:";
             // 
-            // dgvResetcas
-            // 
-            this.dgvResetcas.AllowUserToAddRows = false;
-            this.dgvResetcas.AllowUserToDeleteRows = false;
-            this.dgvResetcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResetcas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.cliente,
-            this.fec_reserva,
-            this.pelicula,
-            this.socio});
-            this.dgvResetcas.Location = new System.Drawing.Point(13, 79);
-            this.dgvResetcas.Name = "dgvResetcas";
-            this.dgvResetcas.ReadOnly = true;
-            this.dgvResetcas.RowHeadersVisible = false;
-            this.dgvResetcas.RowTemplate.Height = 25;
-            this.dgvResetcas.Size = new System.Drawing.Size(434, 313);
-            this.dgvResetcas.TabIndex = 57;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 30;
-            // 
-            // cliente
-            // 
-            this.cliente.HeaderText = "Cliente";
-            this.cliente.Name = "cliente";
-            this.cliente.ReadOnly = true;
-            // 
-            // fec_reserva
-            // 
-            this.fec_reserva.HeaderText = "Fecha Reserva";
-            this.fec_reserva.Name = "fec_reserva";
-            this.fec_reserva.ReadOnly = true;
-            // 
-            // pelicula
-            // 
-            this.pelicula.HeaderText = "Pelicula";
-            this.pelicula.Name = "pelicula";
-            this.pelicula.ReadOnly = true;
-            // 
-            // socio
-            // 
-            this.socio.HeaderText = "Socio";
-            this.socio.Name = "socio";
-            this.socio.ReadOnly = true;
-            // 
             // dtpConfirmacion
             // 
             this.dtpConfirmacion.Location = new System.Drawing.Point(625, 178);
@@ -334,11 +279,21 @@
             this.porGeneroToolStripMenuItem.Text = "Genero de pelicula";
             this.porGeneroToolStripMenuItem.Click += new System.EventHandler(this.porGeneroToolStripMenuItem_Click);
             // 
+            // dgvReservas
+            // 
+            this.dgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReservas.Location = new System.Drawing.Point(26, 75);
+            this.dgvReservas.Name = "dgvReservas";
+            this.dgvReservas.RowTemplate.Height = 25;
+            this.dgvReservas.Size = new System.Drawing.Size(447, 291);
+            this.dgvReservas.TabIndex = 83;
+            // 
             // FrmReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 411);
+            this.Controls.Add(this.dgvReservas);
             this.Controls.Add(this.dtpConfirmacion);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label11);
@@ -361,7 +316,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvResetcas);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmReservas";
@@ -369,9 +323,9 @@
             this.Text = "FrmReservas";
             this.Load += new System.EventHandler(this.FrmReservas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCantTicket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResetcas)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,16 +353,11 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private DataGridView dgvResetcas;
-        private DataGridViewTextBoxColumn id;
-        private DataGridViewTextBoxColumn cliente;
-        private DataGridViewTextBoxColumn fec_reserva;
-        private DataGridViewTextBoxColumn pelicula;
-        private DataGridViewTextBoxColumn socio;
         private DateTimePicker dtpConfirmacion;
         private Label label5;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem consultasToolStripMenuItem;
         private ToolStripMenuItem porGeneroToolStripMenuItem;
+        private DataGridView dgvReservas;
     }
 }

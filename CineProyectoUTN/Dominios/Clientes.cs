@@ -23,5 +23,12 @@ namespace CineProyectoUTN.Dominios
              this.Email = email;
              this.Socio = socio;
         }
+
+        public override string ToString()
+        {
+            return Apellido + " " + Nombre;
+        }
+
+
     }
 }

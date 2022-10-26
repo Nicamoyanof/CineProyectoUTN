@@ -18,12 +18,6 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-<<<<<<< HEAD
-          "ref/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
-=======
           "ref/netstandard2.0/_._": {
             "related": ".xml"
           }
@@ -32,7 +26,6 @@
           "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
             "related": ".xml"
           }
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -88,12 +81,6 @@
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
-<<<<<<< HEAD
-          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
-=======
           "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
             "related": ".xml"
           }
@@ -102,7 +89,6 @@
           "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
             "related": ".xml"
           }
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -122,12 +108,6 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-<<<<<<< HEAD
-          "ref/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
-=======
           "ref/netstandard2.0/_._": {
             "related": ".xml"
           }
@@ -136,7 +116,6 @@
           "lib/netstandard2.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
@@ -148,12 +127,6 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-<<<<<<< HEAD
-          "ref/netcoreapp3.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
-=======
           "ref/netcoreapp3.0/_._": {
             "related": ".xml"
           }
@@ -162,7 +135,6 @@
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
             "related": ".xml"
           }
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
@@ -498,37 +470,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\Matías\\.nuget\\packages\\": {}
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
+    "C:\\Users\\Gabriel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
       "projectName": "CineProyectoUTN",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-      "projectName": "CineProyectoUTN",
-      "projectPath": "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-      "packagesPath": "C:\\Users\\Matías\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matías\\Desktop\\repo_cine\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
+      "projectPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+      "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-        "C:\\Users\\Matías\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> dd87408cef759a943cb25a352f35ffcbf565ce98
+        "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -578,8 +532,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
