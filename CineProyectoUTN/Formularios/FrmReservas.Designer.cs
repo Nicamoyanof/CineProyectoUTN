@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label11 = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.numCantTicket = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
@@ -64,15 +64,15 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label11
+            // txtTotal
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(845, 308);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(50, 25);
-            this.label11.TabIndex = 79;
-            this.label11.Text = "0,00";
+            this.txtTotal.AutoSize = true;
+            this.txtTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTotal.Location = new System.Drawing.Point(845, 308);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(50, 25);
+            this.txtTotal.TabIndex = 79;
+            this.txtTotal.Text = "0,00";
             // 
             // label10
             // 
@@ -171,6 +171,7 @@
             this.btnCancelar.TabIndex = 66;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // cboFomaPago
             // 
@@ -261,6 +262,7 @@
             this.dgvReservas.RowTemplate.Height = 25;
             this.dgvReservas.Size = new System.Drawing.Size(434, 313);
             this.dgvReservas.TabIndex = 57;
+            this.dgvReservas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellContentClick);
             // 
             // id
             // 
@@ -341,7 +343,7 @@
             this.ClientSize = new System.Drawing.Size(912, 411);
             this.Controls.Add(this.dtpConfirmacion);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.numCantTicket);
             this.Controls.Add(this.label7);
@@ -379,7 +381,7 @@
 
         #endregion
 
-        private Label label11;
+        private Label txtTotal;
         private Label label10;
         private NumericUpDown numCantTicket;
         private Label label7;

@@ -22,6 +22,7 @@ namespace CineProyectoUTN.Formularios
         {
             InitializeComponent();
             helper = new Helper();
+
         }
 
         private void porGeneroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,11 +33,33 @@ namespace CineProyectoUTN.Formularios
 
         private void FrmReservas_Load(object sender, EventArgs e)
         {
+            CargarListas();
+            CargarPeliculas();
             cargarCbo(cboFuncion ,"SELECT * FROM Funciones", "horario", "id_funcion");
             cargarCbo(cboCliente, "SELECT * FROM Clientes", "apellido", "id_cliente");
             cargarCbo(cboFomaPago, "SELECT * FROM Tipos_Pagos", "nombre_tipo_pago", "id_tipo_pago");
             cargarReservas();
-            CargarListas();
+            habilitar(true);
+
+
+        }
+
+    
+
+        private void habilitar(bool v)
+        {
+            btnAgregar.Enabled = !v;
+            btnBorrar.Enabled = !v;
+            btnEditar.Enabled = !v;
+            btnCancelar.Enabled = v;
+            cboFuncion.SelectedIndex = -1;
+            cboFomaPago.SelectedIndex = -1;
+            cboCliente.SelectedIndex = -1;
+            dtpConfirmacion.Value = DateTime.Now;
+            dtpReserva.Value = DateTime.Now;
+            txtPrecio.Text.Equals(string.Empty);
+            txtPrecio.Enabled = !v;
+            numCantTicket.Enabled = !v;
         }
 
         private void cargarReservas()
@@ -48,11 +71,16 @@ namespace CineProyectoUTN.Formularios
                 Reservas reserva = new Reservas();
                 reserva.FechaReserva = Convert.ToDateTime(dr["fecha_reserva"]);
                 reserva.HoraConfirmacion = Convert.ToDateTime(dr["hora_confirmacion"]);
-                reserva.Pelicula = lPeliculas[Convert.ToInt32(dr["id_pelicula"]) - 1];
-                reserva.Cliente = lClientes[Convert.ToInt32(dr["id_cliente"]) - 1];
+               // reserva.Pelicula = lPeliculas[Convert.ToInt32(dr["id_funcion"])-1]; VER
+                reserva.Cliente = lClientes[Convert.ToInt32(dr["id_cliente"])-1];
+
 
                 lReservas.Add(reserva);
-                dgvReservas.Rows.Add(dr["id_reserva"].ToString(), reserva.Cliente.ToString(), reserva.FechaReserva, reserva.Pelicula.ToString()); ;
+
+                dgvReservas.Rows.Add(new object[] { dr["id_reserva"].ToString(), 
+                    reserva.Cliente.ToString(), reserva.FechaReserva,
+                    reserva.Pelicula.Nombre 
+                });
             }
 
             
@@ -67,14 +95,6 @@ namespace CineProyectoUTN.Formularios
 
         private void CargarListas()
         {
-            DataTable dt = helper.consultaSql("Select * from Peliculas");
-            foreach(DataRow dr in dt.Rows)
-            {
-                Peliculas pelicula = new Peliculas();
-                pelicula.Descripcion = dr["descripcion_pelicula"].ToString();
-                pelicula.Nombre = dr["nombre_pelicula"].ToString();
-                lPeliculas.Add(pelicula);
-            }
             DataTable dtc = helper.consultaSql("Select * from Clientes");
             foreach (DataRow drc in dtc.Rows)
             {
@@ -85,9 +105,47 @@ namespace CineProyectoUTN.Formularios
                 c.eMail = drc["email"].ToString();
                 lClientes.Add(c);
             }
+        }
+        public void CargarPeliculas()
+        {
+            DataTable dt = helper.consultaSql("Select * from Peliculas");
+            foreach (DataRow dr in dt.Rows)
+            {
+                string Descripcion = dr["descripcion_pelicula"].ToString();
+                string Nombre = Convert.ToString(dr["nombre_pelicula"]);
+                EdadesPermitidas EdadMinima = new EdadesPermitidas();
+                GeneroPelicula Genero = new GeneroPelicula();
+                
+                Peliculas pelicula = new Peliculas(Nombre, EdadMinima, Genero, Descripcion);
+               // pelicula.Descripcion = dr["descripcion_pelicula"].ToString();
+               // pelicula.Nombre = Convert.ToString(dr["nombre_pelicula"]);
+               // pelicula.Genero = null;
+               // pelicula.EdadMinima = null;
 
+                lPeliculas.Add(pelicula);
 
+            }
+        }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            habilitar(true);
+        }
+
+        private void dgvReservas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = int.Parse(dgvReservas.CurrentRow.Cells[0].Value.ToString());
+            Reservas ReservaSeleccionada = lReservas[index - 1];
+            SeleccionarPelicula(ReservaSeleccionada);
+        }
+
+        private void SeleccionarPelicula(Reservas reserva)
+        {
+            cboCliente.Text = reserva.Cliente.ToString();
+            cboFuncion.Text = reserva.Pelicula.ToString();
+            dtpConfirmacion.Text = reserva.HoraConfirmacion.ToString();
+            dtpReserva.Text = reserva.FechaReserva.ToString();
+            //Faltan agregar
         }
     }
 }
