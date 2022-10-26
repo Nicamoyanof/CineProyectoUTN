@@ -234,5 +234,11 @@ namespace CineProyectoUTN.Formularios
         {
             HabilitarEdicion(true);
         }
+
+        private void entradasVendidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmClienteFuncion frmClienteFuncion = new FrmClienteFuncion();
+            frmClienteFuncion.Show();
+        }
     }
 }

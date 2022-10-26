@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvgRecaudacion = new System.Windows.Forms.DataGridView();
             this.pelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total_recaudado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgRecaudacion)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -46,24 +46,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "TOTAL RECAUDADO POR PELICULA";
             // 
-            // dataGridView1
+            // dvgRecaudacion
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dvgRecaudacion.AllowUserToAddRows = false;
+            this.dvgRecaudacion.AllowUserToDeleteRows = false;
+            this.dvgRecaudacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgRecaudacion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.pelicula,
             this.genero,
             this.total_recaudado});
-            this.dataGridView1.Location = new System.Drawing.Point(155, 109);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(577, 392);
-            this.dataGridView1.TabIndex = 1;
+            this.dvgRecaudacion.Location = new System.Drawing.Point(155, 109);
+            this.dvgRecaudacion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dvgRecaudacion.Name = "dvgRecaudacion";
+            this.dvgRecaudacion.ReadOnly = true;
+            this.dvgRecaudacion.RowHeadersVisible = false;
+            this.dvgRecaudacion.RowHeadersWidth = 51;
+            this.dvgRecaudacion.RowTemplate.Height = 25;
+            this.dvgRecaudacion.Size = new System.Drawing.Size(577, 392);
+            this.dvgRecaudacion.TabIndex = 1;
             // 
             // pelicula
             // 
@@ -94,13 +94,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 600);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dvgRecaudacion);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmRecaudacionPelicula";
             this.Text = "FrmRecaudacionPelicula";
             this.Load += new System.EventHandler(this.FrmRecaudacionPelicula_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgRecaudacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,7 +109,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dvgRecaudacion;
         private DataGridViewTextBoxColumn pelicula;
         private DataGridViewTextBoxColumn genero;
         private DataGridViewTextBoxColumn total_recaudado;

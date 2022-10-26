@@ -25,7 +25,7 @@ namespace CineProyectoUTN.Formularios
 
         private void FrmRecaudacionPelicula_Load(object sender, EventArgs e)
         {
-
+            CargarPeliculasRecaudacion();
         }
 
         public void CargarPeliculasRecaudacion()
@@ -33,7 +33,14 @@ namespace CineProyectoUTN.Formularios
             DataTable table = helper.ConsultaSQLSP("SP_TOTAL_RECAUDADO_POR_PELICULA", null);
             foreach (DataRow dr in table.Rows)
             {
-
+                if (dr["Dinero recaudado"].ToString().Equals(string.Empty))
+                {
+                    dvgRecaudacion.Rows.Add(dr["Pelicula"].ToString(), dr["Genero"].ToString(), "null");
+                }
+                else
+                {
+                    dvgRecaudacion.Rows.Add(dr["Pelicula"].ToString(), dr["Genero"].ToString(), dr["Dinero recaudado"].ToString());
+                }
             }
         }
 
