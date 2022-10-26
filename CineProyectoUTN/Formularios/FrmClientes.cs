@@ -24,7 +24,7 @@ namespace CineProyectoUTN.Formularios
         private void FrmClientes_Load(object sender, EventArgs e)
         {
             cargarCombo("SELECT * FROM CIUDADES");
-            DataTable tabla = 
+            DataTable tabla =
                   oDatos.consultaSql
                 ("select apellido 'Apellido', nombre 'Nombre', fecha_nac 'Fecha de Nacimiento'," +
                 " email 'Email', socio 'Socio', Nombre_ciudad 'Ciudad' " +
@@ -60,17 +60,14 @@ namespace CineProyectoUTN.Formularios
             textBox2.Text = dataGridView1.SelectedCells[1].Value.ToString();
             dateTimePicker1.Text = dataGridView1.SelectedCells[2].Value.ToString();
             textBox4.Text = dataGridView1.SelectedCells[3].Value.ToString();
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            comboBox1.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            if (dataGridView1.CurrentRow.Cells[4].Value.Equals(true))
             {
-                DataGridViewCheckBoxCell chek = (DataGridViewCheckBoxCell)row.Cells[4];
-                if (chek.Selected == true)
-                {
-                    radioButton2.Checked = true;
-                }
-                else
-                {
-                    radioButton1.Checked = true;
-                }
+                radioButton2.Checked = true;
+            }
+            else
+            {
+                radioButton1.Checked = true;
             }
         }
         private void button1_Click(object sender, EventArgs e)
