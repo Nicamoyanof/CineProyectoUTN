@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineProyectoUTN.Dominios
 {
-    internal class TipoSala
+    public class TipoSala
     {
 
         public TipoSala(string nombre, string descripcion, float precio)

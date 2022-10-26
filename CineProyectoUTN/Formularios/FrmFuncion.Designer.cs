@@ -28,121 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.dtpHorario = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSala = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPelicula = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFunciones = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAsientos = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entradasVendidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFunciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsientos)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
+            // btnBorrar
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(772, 324);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 31);
-            this.button4.TabIndex = 46;
-            this.button4.Text = "Borrar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBorrar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBorrar.Location = new System.Drawing.Point(952, 432);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(95, 41);
+            this.btnBorrar.TabIndex = 46;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnAgregar
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(675, 324);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 31);
-            this.button3.TabIndex = 45;
-            this.button3.Text = "Agregar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregar.Location = new System.Drawing.Point(841, 432);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(95, 41);
+            this.btnAgregar.TabIndex = 45;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(578, 324);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 31);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEditar.Location = new System.Drawing.Point(731, 432);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(95, 41);
+            this.btnEditar.TabIndex = 44;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCancelar
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(479, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 31);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(617, 432);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(95, 41);
+            this.btnCancelar.TabIndex = 43;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // dateTimePicker1
+            // dtpHorario
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(564, 207);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(272, 23);
-            this.dateTimePicker1.TabIndex = 32;
+            this.dtpHorario.Location = new System.Drawing.Point(715, 276);
+            this.dtpHorario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtpHorario.Name = "dtpHorario";
+            this.dtpHorario.Size = new System.Drawing.Size(310, 27);
+            this.dtpHorario.TabIndex = 32;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(464, 213);
+            this.label5.Location = new System.Drawing.Point(600, 284);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 15);
+            this.label5.Size = new System.Drawing.Size(116, 20);
             this.label5.TabIndex = 31;
             this.label5.Text = "Horario funcion:";
             // 
-            // textBox2
+            // txtSala
             // 
-            this.textBox2.Location = new System.Drawing.Point(564, 169);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(272, 23);
-            this.textBox2.TabIndex = 30;
+            this.txtSala.Location = new System.Drawing.Point(715, 225);
+            this.txtSala.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSala.Name = "txtSala";
+            this.txtSala.Size = new System.Drawing.Size(310, 27);
+            this.txtSala.TabIndex = 30;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(510, 172);
+            this.label4.Location = new System.Drawing.Point(653, 229);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 15);
+            this.label4.Size = new System.Drawing.Size(61, 20);
             this.label4.TabIndex = 29;
             this.label4.Text = "N° Sala:";
             // 
-            // textBox1
+            // txtPelicula
             // 
-            this.textBox1.Location = new System.Drawing.Point(564, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 23);
-            this.textBox1.TabIndex = 28;
+            this.txtPelicula.Location = new System.Drawing.Point(715, 175);
+            this.txtPelicula.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPelicula.Name = "txtPelicula";
+            this.txtPelicula.Size = new System.Drawing.Size(310, 27);
+            this.txtPelicula.TabIndex = 28;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(508, 134);
+            this.label3.Location = new System.Drawing.Point(651, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 15);
+            this.label3.Size = new System.Drawing.Size(62, 20);
             this.label3.TabIndex = 27;
             this.label3.Text = "Pelicula:";
             // 
@@ -150,9 +158,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(504, 78);
+            this.label2.Location = new System.Drawing.Point(646, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 25);
+            this.label2.Size = new System.Drawing.Size(105, 32);
             this.label2.TabIndex = 26;
             this.label2.Text = "Funcion:";
             // 
@@ -160,33 +168,37 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(23, 31);
+            this.label1.Location = new System.Drawing.Point(26, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 25);
+            this.label1.Size = new System.Drawing.Size(128, 32);
             this.label1.TabIndex = 25;
             this.label1.Text = "Funciones:";
             // 
-            // dataGridView1
+            // dgvFunciones
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFunciones.AllowUserToAddRows = false;
+            this.dgvFunciones.AllowUserToDeleteRows = false;
+            this.dgvFunciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFunciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.pelicula,
             this.sala,
             this.horario});
-            this.dataGridView1.Location = new System.Drawing.Point(10, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(434, 313);
-            this.dataGridView1.TabIndex = 24;
+            this.dgvFunciones.Location = new System.Drawing.Point(11, 104);
+            this.dgvFunciones.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvFunciones.Name = "dgvFunciones";
+            this.dgvFunciones.ReadOnly = true;
+            this.dgvFunciones.RowHeadersVisible = false;
+            this.dgvFunciones.RowHeadersWidth = 51;
+            this.dgvFunciones.RowTemplate.Height = 25;
+            this.dgvFunciones.Size = new System.Drawing.Size(583, 417);
+            this.dgvFunciones.TabIndex = 24;
+            this.dgvFunciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFunciones_CellContentClick);
             // 
             // id
             // 
             this.id.HeaderText = "";
+            this.id.MinimumWidth = 6;
             this.id.Name = "id";
             this.id.ReadOnly = true;
             this.id.Width = 30;
@@ -194,6 +206,7 @@
             // pelicula
             // 
             this.pelicula.HeaderText = "Pelicula";
+            this.pelicula.MinimumWidth = 6;
             this.pelicula.Name = "pelicula";
             this.pelicula.ReadOnly = true;
             this.pelicula.Width = 200;
@@ -201,14 +214,18 @@
             // sala
             // 
             this.sala.HeaderText = "N° Sala";
+            this.sala.MinimumWidth = 6;
             this.sala.Name = "sala";
             this.sala.ReadOnly = true;
+            this.sala.Width = 125;
             // 
             // horario
             // 
             this.horario.HeaderText = "Horario";
+            this.horario.MinimumWidth = 6;
             this.horario.Name = "horario";
             this.horario.ReadOnly = true;
+            this.horario.Width = 200;
             // 
             // dgvAsientos
             // 
@@ -221,49 +238,65 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgvAsientos.Location = new System.Drawing.Point(913, 92);
+            this.dgvAsientos.Location = new System.Drawing.Point(1137, 104);
+            this.dgvAsientos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvAsientos.Name = "dgvAsientos";
             this.dgvAsientos.ReadOnly = true;
             this.dgvAsientos.RowHeadersVisible = false;
+            this.dgvAsientos.RowHeadersWidth = 51;
             this.dgvAsientos.RowTemplate.Height = 25;
-            this.dgvAsientos.Size = new System.Drawing.Size(240, 150);
+            this.dgvAsientos.Size = new System.Drawing.Size(245, 133);
             this.dgvAsientos.TabIndex = 47;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 50;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column1.Width = 60;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 50;
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column2.Width = 60;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 50;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column3.Width = 60;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 50;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column4.Width = 60;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1271, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1453, 30);
             this.menuStrip1.TabIndex = 48;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -272,41 +305,42 @@
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.entradasVendidasToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // entradasVendidasToolStripMenuItem
             // 
             this.entradasVendidasToolStripMenuItem.Name = "entradasVendidasToolStripMenuItem";
-            this.entradasVendidasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entradasVendidasToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.entradasVendidasToolStripMenuItem.Text = "Entradas vendidas";
             // 
             // Funcion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1271, 406);
+            this.ClientSize = new System.Drawing.Size(1453, 541);
             this.Controls.Add(this.dgvAsientos);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnBorrar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.dtpHorario);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSala);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPelicula);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvFunciones);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Funcion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmFuncion";
             this.Load += new System.EventHandler(this.Funcion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFunciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsientos)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -317,30 +351,30 @@
 
         #endregion
 
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private DateTimePicker dateTimePicker1;
+        private Button btnBorrar;
+        private Button btnAgregar;
+        private Button btnEditar;
+        private Button btnCancelar;
+        private DateTimePicker dtpHorario;
         private Label label5;
-        private TextBox textBox2;
+        private TextBox txtSala;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox txtPelicula;
         private Label label3;
         private Label label2;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvFunciones;
+        private DataGridView dgvAsientos;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem consultasToolStripMenuItem;
+        private ToolStripMenuItem entradasVendidasToolStripMenuItem;
         private DataGridViewTextBoxColumn id;
         private DataGridViewTextBoxColumn pelicula;
         private DataGridViewTextBoxColumn sala;
         private DataGridViewTextBoxColumn horario;
-        private DataGridView dgvAsientos;
-        private DataGridViewButtonColumn Column1;
-        private DataGridViewButtonColumn Column2;
-        private DataGridViewButtonColumn Column3;
-        private DataGridViewButtonColumn Column4;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem consultasToolStripMenuItem;
-        private ToolStripMenuItem entradasVendidasToolStripMenuItem;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
     }
 }

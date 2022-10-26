@@ -111,16 +111,10 @@
             // cboFormaPago
             // 
             this.cboFormaPago.FormattingEnabled = true;
-<<<<<<< HEAD
             this.cboFormaPago.Location = new System.Drawing.Point(713, 289);
             this.cboFormaPago.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboFormaPago.Name = "cboFormaPago";
             this.cboFormaPago.Size = new System.Drawing.Size(311, 28);
-=======
-            this.cboFormaPago.Location = new System.Drawing.Point(624, 217);
-            this.cboFormaPago.Name = "cboFormaPago";
-            this.cboFormaPago.Size = new System.Drawing.Size(273, 23);
->>>>>>> 7aacdafb45fa0c08b298733875d5ac76723ebcd6
             this.cboFormaPago.TabIndex = 41;
             // 
             // label9
@@ -198,7 +192,6 @@
             this.empleado,
             this.pelicula,
             this.socio});
-<<<<<<< HEAD
             this.dgvTickets.Location = new System.Drawing.Point(14, 119);
             this.dgvTickets.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvTickets.Name = "dgvTickets";
@@ -207,14 +200,6 @@
             this.dgvTickets.RowHeadersWidth = 51;
             this.dgvTickets.RowTemplate.Height = 25;
             this.dgvTickets.Size = new System.Drawing.Size(496, 417);
-=======
-            this.dgvTickets.Location = new System.Drawing.Point(12, 89);
-            this.dgvTickets.Name = "dgvTickets";
-            this.dgvTickets.ReadOnly = true;
-            this.dgvTickets.RowHeadersVisible = false;
-            this.dgvTickets.RowTemplate.Height = 25;
-            this.dgvTickets.Size = new System.Drawing.Size(434, 313);
->>>>>>> 7aacdafb45fa0c08b298733875d5ac76723ebcd6
             this.dgvTickets.TabIndex = 24;
             // 
             // id
@@ -260,46 +245,28 @@
             // cboFuncion
             // 
             this.cboFuncion.FormattingEnabled = true;
-<<<<<<< HEAD
             this.cboFuncion.Location = new System.Drawing.Point(712, 135);
             this.cboFuncion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboFuncion.Name = "cboFuncion";
             this.cboFuncion.Size = new System.Drawing.Size(311, 28);
-=======
-            this.cboFuncion.Location = new System.Drawing.Point(623, 101);
-            this.cboFuncion.Name = "cboFuncion";
-            this.cboFuncion.Size = new System.Drawing.Size(273, 23);
->>>>>>> 7aacdafb45fa0c08b298733875d5ac76723ebcd6
             this.cboFuncion.TabIndex = 47;
             // 
             // cboCliente
             // 
             this.cboCliente.FormattingEnabled = true;
-<<<<<<< HEAD
             this.cboCliente.Location = new System.Drawing.Point(712, 173);
             this.cboCliente.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboCliente.Name = "cboCliente";
             this.cboCliente.Size = new System.Drawing.Size(311, 28);
-=======
-            this.cboCliente.Location = new System.Drawing.Point(623, 130);
-            this.cboCliente.Name = "cboCliente";
-            this.cboCliente.Size = new System.Drawing.Size(273, 23);
->>>>>>> 7aacdafb45fa0c08b298733875d5ac76723ebcd6
             this.cboCliente.TabIndex = 48;
             // 
             // cboEmpleado
             // 
             this.cboEmpleado.FormattingEnabled = true;
-<<<<<<< HEAD
             this.cboEmpleado.Location = new System.Drawing.Point(713, 212);
             this.cboEmpleado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboEmpleado.Name = "cboEmpleado";
             this.cboEmpleado.Size = new System.Drawing.Size(311, 28);
-=======
-            this.cboEmpleado.Location = new System.Drawing.Point(624, 159);
-            this.cboEmpleado.Name = "cboEmpleado";
-            this.cboEmpleado.Size = new System.Drawing.Size(273, 23);
->>>>>>> 7aacdafb45fa0c08b298733875d5ac76723ebcd6
             this.cboEmpleado.TabIndex = 50;
             // 
             // label5
@@ -388,11 +355,7 @@
             // filtroPorEdadToolStripMenuItem
             // 
             this.filtroPorEdadToolStripMenuItem.Name = "filtroPorEdadToolStripMenuItem";
-<<<<<<< HEAD
             this.filtroPorEdadToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
-=======
-            this.filtroPorEdadToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
->>>>>>> 7aacdafb45fa0c08b298733875d5ac76723ebcd6
             this.filtroPorEdadToolStripMenuItem.Text = "Filtro por edad";
             // 
             // FrmVentas

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineProyectoUTN.Dominios
 {
-    internal class GeneroPelicula
+    public class GeneroPelicula
     {
 
         public GeneroPelicula(string nombre, string descripcion)

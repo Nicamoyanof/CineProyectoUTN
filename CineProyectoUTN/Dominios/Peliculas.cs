@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineProyectoUTN.Dominios
 {
-    internal class Peliculas
+    public class Peliculas
     {
 
         public Peliculas(string nombre, EdadesPermitidas edadMinima, GeneroPelicula genero, string descripcion)
@@ -30,6 +30,9 @@ namespace CineProyectoUTN.Dominios
         public GeneroPelicula Genero { get; set; }
         public string Descripcion { get; set; }
 
-
+        public override string ToString()
+        {
+            return Nombre;
+        }
     }
 }

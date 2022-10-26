@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineProyectoUTN.Dominios
 {
-    internal class Asientos
+    public class Asientos
     {
 
         public Asientos(int numeroAsiento, bool disponible)

@@ -223,6 +223,10 @@ namespace CineProyectoUTN.Formularios
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 
 }

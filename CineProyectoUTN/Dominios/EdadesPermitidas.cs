@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineProyectoUTN.Dominios
 {
-    internal class EdadesPermitidas
+    public class EdadesPermitidas
     {
 
         public EdadesPermitidas(string nombre, int edad)

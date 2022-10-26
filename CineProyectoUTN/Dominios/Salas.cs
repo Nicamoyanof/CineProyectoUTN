@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace CineProyectoUTN.Dominios
 {
-    internal class Salas
+    public class Salas
     {
 
         public int NumeroSala { get; set; }
         public TipoSala TipoSala { get; set; }
         public List<Asientos> LstAsientos{ get; set; }
+
+
+        public override string ToString()
+        {
+            return NumeroSala.ToString();
+        }
 
     }
 }
