@@ -24,7 +24,11 @@ namespace CineProyectoUTN.Formularios
         private void FrmClientes_Load(object sender, EventArgs e)
         {
             cargarCombo("SELECT * FROM CIUDADES");
-            DataTable tabla = oDatos.consultaSql("select * from clientes");
+            DataTable tabla = 
+                  oDatos.consultaSql
+                ("select apellido 'Apellido', nombre 'Nombre', fecha_nac 'Fecha de Nacimiento'," +
+                " email 'Email', socio 'Socio', Nombre_ciudad 'Ciudad' " +
+                "from clientes c join ciudades ciu on c.id_ciudad=ciu.id_ciudad");
             dataGridView1.DataSource = tabla;
         }
         public DataTable cargarCombo(string ConsultaSql)
@@ -52,17 +56,23 @@ namespace CineProyectoUTN.Formularios
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1.Text = dataGridView1.SelectedCells[8].Value.ToString();
-            textBox2.Text = dataGridView1.SelectedCells[2].Value.ToString();
-            dateTimePicker1.Text = dataGridView1.SelectedCells[3].Value.ToString();
-            textBox4.Text = dataGridView1.SelectedCells[4].Value.ToString();
-            if (dataGridView1.SelectedCells[5].Value is 0)
+            textBox1.Text = dataGridView1.SelectedCells[0].Value.ToString();
+            textBox2.Text = dataGridView1.SelectedCells[1].Value.ToString();
+            dateTimePicker1.Text = dataGridView1.SelectedCells[2].Value.ToString();
+            textBox4.Text = dataGridView1.SelectedCells[3].Value.ToString();
+            foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                radioButton1.Checked = true;
+                DataGridViewCheckBoxCell chek = (DataGridViewCheckBoxCell)row.Cells[4];
+                if (chek.Selected == true)
+                {
+                    radioButton2.Checked = true;
+                }
+                else
+                {
+                    radioButton1.Checked = true;
+                }
             }
-            else { radioButton2.Checked = true; }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();

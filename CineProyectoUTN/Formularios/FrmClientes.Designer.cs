@@ -52,12 +52,6 @@
             this.gastoPromedioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantidadDeSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesExtranjerosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fec_nac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.socio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -118,15 +112,15 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(603, 159);
+            this.dateTimePicker1.Location = new System.Drawing.Point(579, 159);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(248, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(272, 23);
             this.dateTimePicker1.TabIndex = 32;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(491, 165);
+            this.label5.Location = new System.Drawing.Point(467, 165);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 15);
             this.label5.TabIndex = 31;
@@ -192,21 +186,16 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.nombre,
-            this.Apellido,
-            this.fec_nac,
-            this.email,
-            this.socio});
             this.dataGridView1.Location = new System.Drawing.Point(22, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(447, 305);
+            this.dataGridView1.Size = new System.Drawing.Size(439, 332);
             this.dataGridView1.TabIndex = 24;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -300,44 +289,6 @@
             this.clientesExtranjerosToolStripMenuItem.Text = "Clientes extranjeros";
             this.clientesExtranjerosToolStripMenuItem.Click += new System.EventHandler(this.clientesExtranjerosToolStripMenuItem_Click);
             // 
-            // id
-            // 
-            this.id.HeaderText = "";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 10;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.ReadOnly = true;
-            // 
-            // fec_nac
-            // 
-            this.fec_nac.HeaderText = "Nacimiento";
-            this.fec_nac.Name = "fec_nac";
-            this.fec_nac.ReadOnly = true;
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            // 
-            // socio
-            // 
-            this.socio.HeaderText = "Socio";
-            this.socio.Name = "socio";
-            this.socio.ReadOnly = true;
-            this.socio.Width = 50;
-            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -402,11 +353,5 @@
         private ToolStripMenuItem gastoPromedioToolStripMenuItem;
         private ToolStripMenuItem cantidadDeSociosToolStripMenuItem;
         private ToolStripMenuItem clientesExtranjerosToolStripMenuItem;
-        private DataGridViewTextBoxColumn id;
-        private DataGridViewTextBoxColumn nombre;
-        private DataGridViewTextBoxColumn Apellido;
-        private DataGridViewTextBoxColumn fec_nac;
-        private DataGridViewTextBoxColumn email;
-        private DataGridViewTextBoxColumn socio;
     }
 }
