@@ -16,6 +16,9 @@
     <Compile Update="Formularios\FrmEmpleadosVacaciones.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Formularios\FrmFiltroporEdad.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formularios\FrmFuncion.cs">
       <SubType>Form</SubType>
     </Compile>

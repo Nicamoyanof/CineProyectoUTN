@@ -1,53 +1,27 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
+    "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
+    "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
         "projectName": "CineProyectoUTN",
-        "projectPath": "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-        "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
+        "projectPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
-=======
-    "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-        "projectName": "CineProyectoUTN",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> 4fb86566be54bdccdd75d78f7dc1a41ff90de883
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,19 +39,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "dependencies": {
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.4, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -89,11 +58,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.305\\RuntimeIdentifierGraph.json"
->>>>>>> 4fb86566be54bdccdd75d78f7dc1a41ff90de883
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

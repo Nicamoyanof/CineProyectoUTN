@@ -43,7 +43,6 @@ D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmReservas.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.FrmVentas.resources
 D:\Usuario\Nicanor\UTN\1ER AÑO\2do CUATRIMESTRE\PROGAMACION II\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.Formularios.Funcion.resources
-<<<<<<< HEAD
 C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.exe
 C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.deps.json
 C:\Users\Matías\Desktop\repo_cine\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.runtimeconfig.json
@@ -160,7 +159,6 @@ C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\De
 C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.pdb
 C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.genruntimeconfig.cache
 C:\Users\Equipo\Desktop\TP\tp actualizado\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\ref\CineProyectoUTN.dll
-=======
 C:\Users\Usuario\Desktop\utn\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.exe
 C:\Users\Usuario\Desktop\utn\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.deps.json
 C:\Users\Usuario\Desktop\utn\CineProyectoUTN\CineProyectoUTN\bin\Debug\net6.0-windows\CineProyectoUTN.runtimeconfig.json
@@ -200,3 +198,4 @@ C:\Users\Usuario\Desktop\utn\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-wi
 C:\Users\Usuario\Desktop\utn\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\utn\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\ref\CineProyectoUTN.dll
 >>>>>>> 4fb86566be54bdccdd75d78f7dc1a41ff90de883
+C:\Users\Gabriel\Desktop\Programación - UTN\Laboratorio de computacion II\Trabajo practico\CineProyectoUTN\CineProyectoUTN\obj\Debug\net6.0-windows\CineProyectoUTN.FrmFiltroporEdad.resources

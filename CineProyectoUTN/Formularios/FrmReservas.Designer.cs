@@ -48,19 +48,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvResetcas = new System.Windows.Forms.DataGridView();
+            this.dgvReservas = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fec_reserva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pelicula = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.socio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Socio = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dtpConfirmacion = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porGeneroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numCantTicket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResetcas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -243,24 +243,24 @@
             this.label1.TabIndex = 58;
             this.label1.Text = "Reservas:";
             // 
-            // dgvResetcas
+            // dgvReservas
             // 
-            this.dgvResetcas.AllowUserToAddRows = false;
-            this.dgvResetcas.AllowUserToDeleteRows = false;
-            this.dgvResetcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResetcas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvReservas.AllowUserToAddRows = false;
+            this.dgvReservas.AllowUserToDeleteRows = false;
+            this.dgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReservas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
             this.cliente,
             this.fec_reserva,
             this.pelicula,
-            this.socio});
-            this.dgvResetcas.Location = new System.Drawing.Point(13, 79);
-            this.dgvResetcas.Name = "dgvResetcas";
-            this.dgvResetcas.ReadOnly = true;
-            this.dgvResetcas.RowHeadersVisible = false;
-            this.dgvResetcas.RowTemplate.Height = 25;
-            this.dgvResetcas.Size = new System.Drawing.Size(434, 313);
-            this.dgvResetcas.TabIndex = 57;
+            this.Socio});
+            this.dgvReservas.Location = new System.Drawing.Point(13, 79);
+            this.dgvReservas.Name = "dgvReservas";
+            this.dgvReservas.ReadOnly = true;
+            this.dgvReservas.RowHeadersVisible = false;
+            this.dgvReservas.RowTemplate.Height = 25;
+            this.dgvReservas.Size = new System.Drawing.Size(434, 313);
+            this.dgvReservas.TabIndex = 57;
             // 
             // id
             // 
@@ -287,11 +287,11 @@
             this.pelicula.Name = "pelicula";
             this.pelicula.ReadOnly = true;
             // 
-            // socio
+            // Socio
             // 
-            this.socio.HeaderText = "Socio";
-            this.socio.Name = "socio";
-            this.socio.ReadOnly = true;
+            this.Socio.HeaderText = "Socio";
+            this.Socio.Name = "Socio";
+            this.Socio.ReadOnly = true;
             // 
             // dtpConfirmacion
             // 
@@ -361,7 +361,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvResetcas);
+            this.Controls.Add(this.dgvReservas);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmReservas";
@@ -369,7 +369,7 @@
             this.Text = "FrmReservas";
             this.Load += new System.EventHandler(this.FrmReservas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCantTicket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvResetcas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -399,16 +399,16 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private DataGridView dgvResetcas;
-        private DataGridViewTextBoxColumn id;
-        private DataGridViewTextBoxColumn cliente;
-        private DataGridViewTextBoxColumn fec_reserva;
-        private DataGridViewTextBoxColumn pelicula;
-        private DataGridViewTextBoxColumn socio;
+        private DataGridView dgvReservas;
         private DateTimePicker dtpConfirmacion;
         private Label label5;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem consultasToolStripMenuItem;
         private ToolStripMenuItem porGeneroToolStripMenuItem;
+        private DataGridViewTextBoxColumn id;
+        private DataGridViewTextBoxColumn cliente;
+        private DataGridViewTextBoxColumn fec_reserva;
+        private DataGridViewTextBoxColumn pelicula;
+        private DataGridViewCheckBoxColumn Socio;
     }
 }

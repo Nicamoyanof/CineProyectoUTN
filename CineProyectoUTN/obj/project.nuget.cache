@@ -1,34 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "cqSYhFuCVeclt8I9a0t6VGKnSkZ67tSQTjB3BYdngNvuAr6mThADmVP7k0uypzMrsLAh9cVa4u/AH+QwR0HVeA==",
+  "dgSpecHash": "+bkCcGIFSAe4XJb8XanAzYPXAP5M/GxY+eDMvw+i+MiI5pN6O6xl+qcNbkuaxG2lRMCH3IfBgpBEZnIhuPaFUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Equipo\\Desktop\\TP\\tp actualizado\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Equipo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\system.data.sqlclient\\4.8.4\\system.data.sqlclient.4.8.4.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
-=======
-  "dgSpecHash": "e0Qm0Men/GVcOhz4qx/TMT5UPaTO4oslHiKdkGwM6qQKy645175T5DkqBfYc4y1fDEbsfWUjBu8WhYNTAS6o9A==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\utn\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.data.sqlclient\\4.8.4\\system.data.sqlclient.4.8.4.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
->>>>>>> 4fb86566be54bdccdd75d78f7dc1a41ff90de883
-  ],
-  "logs": []
+  "projectFilePath": "C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\CineProyectoUTN.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Gabriel\\Desktop\\Programación - UTN\\Laboratorio de computacion II\\Trabajo practico\\CineProyectoUTN\\CineProyectoUTN\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
