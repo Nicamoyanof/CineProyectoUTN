@@ -94,6 +94,7 @@ namespace CineProyectoUTN.Formularios
             int index = int.Parse(dgvPeliculas.CurrentRow.Cells[0].Value.ToString());
             peliculaSeleccionada = lPeliculas[index - 1];
             SeleccionarPelicula(peliculaSeleccionada);
+            SeleccionarPoster(peliculaSeleccionada);
         }
 
         private void SeleccionarPelicula(Peliculas pelicula)
@@ -147,6 +148,7 @@ namespace CineProyectoUTN.Formularios
             rbTrece.Checked = false;
             rbQuince.Checked = false;
             rbDieciocho.Checked = false;
+            pictureBox1.Image = null;
             HabilitarEdicion(true);
         }
 
@@ -154,50 +156,71 @@ namespace CineProyectoUTN.Formularios
         {
             switch (peliculas.Nombre)
             {
-                case "American History X":
+                case "American History X ":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/american.jpg");
                     break;
                 case "Infiltrados":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/infiltrados.jpg");
                     break;
                 case "Sospechosos habituales":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/sospechosos.jpg");
                     break;
-                case "El truco final":
+                case "El truco final ":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/el_truco_final.jpg");
                     break;
                 case "Casablanca":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/casablanca.jpg");
                     break;
                 case "Whiplash":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/whiplash.jpg");
                     break;
                 case "Intocable":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/intocable.jpg");
                     break;
                 case "La tumba de las luciérnagas":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/las_tumbas_de_las_luciernagas.jpg");
                     break;
                 case "Hasta que llegó su hora":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/hasta_que_llego_su_hora.jpg");
                     break;
                 case "La ventana indiscreta":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/la_ventana_indiscreta.jpg");
                     break;
                 case "Alien":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/alien.jpg");
                     break;
                 case "Luces de la ciudad":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/city_lights.jpg");
                     break;
                 case "Cinema Paradiso":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/cinemaparadiso.jpg");
                     break;
                 case "Apocalypse Now":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/apocalypsis_now.jpg");
                     break;
                 case "Memento":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/mement.jpg");
                     break;
                 case "En busca del arca perdida":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/indiana_jone.jpg");
                     break;
                 case "Django desencadenado":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/django.jpg");
                     break;
                 case "La vida de los otros":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/la_vida_de_los_otros.jpg");
                     break;
                 case "WALL·E":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/walle.jpg");
                     break;
                 case "Senderos de gloria":
+                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/senderos_de_gloria.jpg");
                     break;
 
                 default:
                     break;
             }
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
     }

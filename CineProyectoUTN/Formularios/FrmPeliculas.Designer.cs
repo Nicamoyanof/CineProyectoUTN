@@ -196,10 +196,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1112, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(1089, 91);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(285, 468);
+            this.pictureBox1.Size = new System.Drawing.Size(335, 480);
             this.pictureBox1.TabIndex = 47;
             this.pictureBox1.TabStop = false;
             // 
@@ -304,7 +304,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1409, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1436, 30);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -327,7 +327,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1409, 584);
+            this.ClientSize = new System.Drawing.Size(1436, 584);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.cboGeneros);
             this.Controls.Add(this.label6);
