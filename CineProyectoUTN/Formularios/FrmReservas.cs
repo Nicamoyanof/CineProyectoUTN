@@ -57,7 +57,7 @@ namespace CineProyectoUTN.Formularios
 
         private void cargarReservas()
         {
-            DataTable dt = helper.consultaSql("SELECT c.apellido+SPACE(1)+c.nombre Cliente, r.fecha_reserva Fecha, p.nombre_pelicula Pelicula, c.socio Socio\r\nFROM  Reservas r\r\njoin Clientes c on c.id_cliente = r.id_cliente\r\nJoin Funciones f on f.id_funcion = r.id_funcion\r\nJoin Peliculas p on p.id_pelicula = f.id_pelicula");
+            DataTable dt = helper.consultaSql("SELECT c.apellido+SPACE(1)+c.nombre Cliente, r.fecha_reserva Fecha, p.nombre_pelicula Pelicula, c.socio Socio, f.horario Horario  \r\nFROM  Reservas r\r\njoin Clientes c on c.id_cliente = r.id_cliente\r\nJoin Funciones f on f.id_funcion = r.id_funcion\r\nJoin Peliculas p on p.id_pelicula = f.id_pelicula");
             dgvReservas.DataSource = dt;
         }
         private void cargarCbo(ComboBox cbo, string select, string display, string value)
@@ -71,8 +71,8 @@ namespace CineProyectoUTN.Formularios
         {
             cboCliente.Text = dgvReservas.CurrentRow.Cells[0].Value.ToString();
             dtpReserva.Text = dgvReservas.CurrentRow.Cells[1].Value.ToString();
-            cboFuncion.Text = dgvReservas.CurrentRow.Cells[2].Value.ToString();
-            dtpConfirmacion.Text = dgvReservas.CurrentRow.Cells[1].Value.ToString();
+            cboFuncion.Text = dgvReservas.CurrentRow.Cells[4].Value.ToString();
+            dtpConfirmacion.Text = dgvReservas.CurrentRow.Cells[4].Value.ToString();
             txtPrecio.Text = 1000.ToString();
             numCantTicket.Value = 2;
 
