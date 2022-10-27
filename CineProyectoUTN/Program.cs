@@ -1,3 +1,5 @@
+using CineProyectoUTN.Formularios;
+
 namespace CineProyectoUTN
 {
     internal static class Program

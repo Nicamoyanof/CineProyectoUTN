@@ -75,8 +75,19 @@ namespace CineProyectoUTN.Formularios
             dtpReserva.Text = dgvReservas.CurrentRow.Cells[1].Value.ToString();
             cboFuncion.Text = dgvReservas.CurrentRow.Cells[2].Value.ToString();
             dtpConfirmacion.Text = dgvReservas.CurrentRow.Cells[1].Value.ToString();
+            txtPrecio.Text = 1000.ToString();
+            numCantTicket.Value = 2;
+            calculartotal();
+        }
 
+        private void calculartotal()
+        {
+            PrecioTotal.Text = (Convert.ToInt32(txtPrecio.Text) * numCantTicket.Value).ToString();
+        }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }

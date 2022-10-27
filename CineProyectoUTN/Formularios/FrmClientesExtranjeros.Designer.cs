@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cant_peliculas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pais = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,11 +44,6 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cliente,
-            this.mes,
-            this.cant_peliculas,
-            this.pais});
             this.dataGridView1.Location = new System.Drawing.Point(12, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -60,32 +51,6 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(504, 385);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // cliente
-            // 
-            this.cliente.HeaderText = "Cliente";
-            this.cliente.Name = "cliente";
-            this.cliente.ReadOnly = true;
-            this.cliente.Width = 150;
-            // 
-            // mes
-            // 
-            this.mes.HeaderText = "Mes";
-            this.mes.Name = "mes";
-            this.mes.ReadOnly = true;
-            // 
-            // cant_peliculas
-            // 
-            this.cant_peliculas.HeaderText = "Cantidad de peliculas";
-            this.cant_peliculas.Name = "cant_peliculas";
-            this.cant_peliculas.ReadOnly = true;
-            this.cant_peliculas.Width = 150;
-            // 
-            // pais
-            // 
-            this.pais.HeaderText = "Pais";
-            this.pais.Name = "pais";
-            this.pais.ReadOnly = true;
             // 
             // label1
             // 
@@ -106,6 +71,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -116,14 +82,25 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown1.Location = new System.Drawing.Point(556, 149);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(152, 29);
             this.numericUpDown1.TabIndex = 11;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label3
             // 
@@ -159,6 +136,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmClientesExtranjeros";
             this.Text = "FrmClientesExtranjeros";
+            this.Load += new System.EventHandler(this.FrmClientesExtranjeros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
@@ -169,10 +147,6 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn cliente;
-        private DataGridViewTextBoxColumn mes;
-        private DataGridViewTextBoxColumn cant_peliculas;
-        private DataGridViewTextBoxColumn pais;
         private Label label1;
         private Button button2;
         private Button button1;
