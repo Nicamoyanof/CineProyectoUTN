@@ -77,6 +77,7 @@ namespace CineProyectoUTN.Formularios
             dtpConfirmacion.Text = dgvReservas.CurrentRow.Cells[1].Value.ToString();
             txtPrecio.Text = 1000.ToString();
             numCantTicket.Value = 2;
+
             calculartotal();
         }
 

@@ -96,6 +96,14 @@ namespace CineProyectoUTN.Formularios
             txtPrecioEntrada.Text = "1040";
             dtpFechaPago.Value = Convert.ToDateTime(dgvTickets.CurrentRow.Cells[5].Value);
 
+            DataTable dt = helper.consultaSql("SELECT COUNT(*) 'cantidad' FROM DETALLES_TICKETS WHERE id_ticket = " + dgvTickets.CurrentRow.Cells[0].Value.ToString());
+            foreach (DataRow dr in dt.Rows)
+            {
+                nupTickets.Value = int.Parse(dr["cantidad"].ToString());
+            }
+
+            txtPrecioFinal.Text = (nupTickets.Value * int.Parse(txtPrecioEntrada.Text)).ToString();
+
         }
     }
 }
