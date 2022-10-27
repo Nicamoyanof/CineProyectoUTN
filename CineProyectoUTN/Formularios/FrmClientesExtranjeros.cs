@@ -29,6 +29,8 @@ namespace CineProyectoUTN.Formularios
         private void button1_Click(object sender, EventArgs e)
         {
             CargarConsulta();
+            button1.Enabled = false;
+            numericUpDown1.Enabled = false;
         }
 
         private void CargarConsulta()
@@ -45,6 +47,7 @@ namespace CineProyectoUTN.Formularios
         {
             Dispose();
         }
+
     }
 }
 
