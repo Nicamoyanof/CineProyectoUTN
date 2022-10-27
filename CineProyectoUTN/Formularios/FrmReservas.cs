@@ -34,7 +34,6 @@ namespace CineProyectoUTN.Formularios
         {
             cargarCbo(cboFuncion, "SELECT * FROM Funciones", "horario", "id_funcion");
             cargarCbo(cboCliente, "SELECT * FROM Clientes", "apellido", "id_cliente");
-            cargarCbo(cboFomaPago, "SELECT * FROM Tipos_Pagos", "nombre_tipo_pago", "id_tipo_pago");
             cargarReservas();
             habilitar(true);
         }
@@ -48,7 +47,6 @@ namespace CineProyectoUTN.Formularios
             btnEditar.Enabled = !v;
             btnCancelar.Enabled = v;
             cboFuncion.SelectedIndex = -1;
-            cboFomaPago.SelectedIndex = -1;
             cboCliente.SelectedIndex = -1;
             dtpConfirmacion.Value = DateTime.Now;
             dtpReserva.Value = DateTime.Now;
@@ -78,12 +76,6 @@ namespace CineProyectoUTN.Formularios
             txtPrecio.Text = 1000.ToString();
             numCantTicket.Value = 2;
 
-            calculartotal();
-        }
-
-        private void calculartotal()
-        {
-            PrecioTotal.Text = (Convert.ToInt32(txtPrecio.Text) * numCantTicket.Value).ToString();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

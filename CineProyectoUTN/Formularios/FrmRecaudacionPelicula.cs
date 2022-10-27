@@ -44,5 +44,9 @@ namespace CineProyectoUTN.Formularios
             }
         }
 
+        private void dvgRecaudacion_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -64,6 +64,7 @@
             this.dvgRecaudacion.RowTemplate.Height = 25;
             this.dvgRecaudacion.Size = new System.Drawing.Size(577, 392);
             this.dvgRecaudacion.TabIndex = 1;
+            this.dvgRecaudacion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgRecaudacion_CellContentClick);
             // 
             // pelicula
             // 
@@ -83,7 +84,7 @@
             // 
             // total_recaudado
             // 
-            this.total_recaudado.HeaderText = "Total Recaudado";
+            this.total_recaudado.HeaderText = "Total Recaudado en Pesos";
             this.total_recaudado.MinimumWidth = 6;
             this.total_recaudado.Name = "total_recaudado";
             this.total_recaudado.ReadOnly = true;
