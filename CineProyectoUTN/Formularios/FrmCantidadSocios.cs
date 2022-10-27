@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CineProyectoUTN.Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,21 @@ namespace CineProyectoUTN.Formularios
 {
     public partial class FrmCantidadSocios : Form
     {
+        private Helper oDatos;
         public FrmCantidadSocios()
         {
             InitializeComponent();
+            oDatos = new Helper();
+        }
+
+        private void FrmCantidadSocios_Load(object sender, EventArgs e)
+        {
+            DataTable tabla = oDatos.ConsultaSQLSP("pa_socios_por_provincia", null);
+            dataGridView1.DataSource = tabla;
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

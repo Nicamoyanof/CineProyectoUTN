@@ -30,12 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id_empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cuil = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dias = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,14 +47,11 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id_empleado,
-            this.nombre,
-            this.telefono,
-            this.cargo,
-            this.cuil,
-            this.dias});
             this.dataGridView1.Location = new System.Drawing.Point(12, 79);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -68,45 +59,6 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(733, 382);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // id_empleado
-            // 
-            this.id_empleado.HeaderText = "";
-            this.id_empleado.Name = "id_empleado";
-            this.id_empleado.ReadOnly = true;
-            this.id_empleado.Width = 30;
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "Nombre Empleado";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 200;
-            // 
-            // telefono
-            // 
-            this.telefono.HeaderText = "Telefono";
-            this.telefono.Name = "telefono";
-            this.telefono.ReadOnly = true;
-            // 
-            // cargo
-            // 
-            this.cargo.HeaderText = "Cargo";
-            this.cargo.Name = "cargo";
-            this.cargo.ReadOnly = true;
-            // 
-            // cuil
-            // 
-            this.cuil.HeaderText = "CUIL";
-            this.cuil.Name = "cuil";
-            this.cuil.ReadOnly = true;
-            // 
-            // dias
-            // 
-            this.dias.HeaderText = "Dias de vacaciones";
-            this.dias.Name = "dias";
-            this.dias.ReadOnly = true;
-            this.dias.Width = 200;
             // 
             // FrmEmpleadosVacaciones
             // 
@@ -117,6 +69,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmEmpleadosVacaciones";
             this.Text = "FrmEmpleadosVacaciones";
+            this.Load += new System.EventHandler(this.FrmEmpleadosVacaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,11 +80,5 @@
 
         private Label label1;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn id_empleado;
-        private DataGridViewTextBoxColumn nombre;
-        private DataGridViewTextBoxColumn telefono;
-        private DataGridViewTextBoxColumn cargo;
-        private DataGridViewTextBoxColumn cuil;
-        private DataGridViewTextBoxColumn dias;
     }
 }
