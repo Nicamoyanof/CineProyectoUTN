@@ -24,7 +24,7 @@ namespace CineProyectoUTN.Formularios
         public FrmPeliculas()
         {
             InitializeComponent();
-            helper = new Helper();
+            helper = Helper.ObtenerInstancia();
         }
 
         private void FrmPeliculas_Load(object sender, EventArgs e)
@@ -37,57 +37,58 @@ namespace CineProyectoUTN.Formularios
 
         private void recaudacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmRecaudacionPelicula frmRecaudacionPelicula = new FrmRecaudacionPelicula();
-            frmRecaudacionPelicula.Show();
+            //FrmRecaudacionPelicula frmRecaudacionPelicula = new FrmRecaudacionPelicula();
+            //frmRecaudacionPelicula.Show();
         }
 
         public void CargarPeliculas()
         {
             dgvPeliculas.Rows.Clear();
-            DataTable table = helper.consultaSql("SELECT * FROM PELICULAS");
-            foreach (DataRow dr in table.Rows)
-            {
-                Peliculas pelicula = new Peliculas();
-                pelicula.Descripcion = dr["descripcion_pelicula"].ToString();
-                pelicula.Nombre = dr["nombre_pelicula"].ToString();
-                pelicula.Genero = lGeneroPelicula[(Convert.ToInt32(dr["id_genero_pelicula"].ToString())) - 1];
-                pelicula.EdadMinima = lEdadesPermitidas[(Convert.ToInt32(dr["id_edad_permitida"].ToString())) - 1];
+            //DataTable table = helper.consultaSql("SELECT * FROM PELICULAS");
+            //foreach (DataRow dr in table.Rows)
+            //{
+            //    Peliculas pelicula = new Peliculas();
+            //    pelicula.Descripcion = dr["descripcion_pelicula"].ToString();
+            //    pelicula.Nombre = dr["nombre_pelicula"].ToString();
+            //    pelicula.Genero = lGeneroPelicula[(Convert.ToInt32(dr["id_genero_pelicula"].ToString())) - 1];
+            //    pelicula.EdadMinima = lEdadesPermitidas[(Convert.ToInt32(dr["id_edad_permitida"].ToString())) - 1];
+            //    pelicula.NombrePoster = dr["nombre_imagen"].ToString();
 
-                lPeliculas.Add(pelicula);
-                dgvPeliculas.Rows.Add(dr["id_pelicula"].ToString(), pelicula.Nombre, pelicula.Genero.ToString(), pelicula.EdadMinima.ToString());
+            //    lPeliculas.Add(pelicula);
+            //    dgvPeliculas.Rows.Add(dr["id_pelicula"].ToString(), pelicula.Nombre, pelicula.Genero.ToString(), pelicula.EdadMinima.ToString());
 
-            }
+            //}
         }
 
         public void CargarGeneros()
         {
-            DataTable table = helper.consultaSql("SELECT * FROM Generos_peliculas");
-            foreach (DataRow dr in table.Rows)
-            {
-                GeneroPelicula genero = new GeneroPelicula();
-                genero.Nombre = dr["nombre_genero"].ToString();
-                genero.Descripcion = dr["descripcion_genero"].ToString();
+            //DataTable table = helper.consultaSql("SELECT * FROM Generos_peliculas");
+            //foreach (DataRow dr in table.Rows)
+            //{
+            //    GeneroPelicula genero = new GeneroPelicula();
+            //    genero.Nombre = dr["nombre_genero"].ToString();
+            //    genero.Descripcion = dr["descripcion_genero"].ToString();
 
-                lGeneroPelicula.Add(genero);
+            //    lGeneroPelicula.Add(genero);
 
-                cboGeneros.Items.Add(genero.ToString());
+            //    cboGeneros.Items.Add(genero.ToString());
 
-            }
+            //}
         }
 
         public void CargarEdades()
         {
-            DataTable table = helper.consultaSql("SELECT * FROM Edades_permitidas");
-            foreach (DataRow dr in table.Rows)
-            {
-                EdadesPermitidas edades = new EdadesPermitidas();
-                edades.Nombre = dr["nombre_edad"].ToString();
-                edades.Edad = int.Parse(dr["minimo_edad"].ToString());
+            //DataTable table =/* helper.consultaSql("SELECT * FROM Edades_permitidas")*/;
+            //foreach (DataRow dr in table.Rows)
+            //{
+            //    EdadesPermitidas edades = new EdadesPermitidas();
+            //    edades.Nombre = dr["nombre_edad"].ToString();
+            //    edades.Edad = int.Parse(dr["minimo_edad"].ToString());
 
-                lEdadesPermitidas.Add(edades);
+            //    lEdadesPermitidas.Add(edades);
 
 
-            }
+            //}
         }
 
         private void dgvPeliculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -155,72 +156,7 @@ namespace CineProyectoUTN.Formularios
 
         private void SeleccionarPoster(Peliculas peliculas)
         {
-            switch (peliculas.Nombre)
-            {
-                case "American History X ":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/american.jpg");
-                    break;
-                case "Infiltrados":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/infiltrados.jpg");
-                    break;
-                case "Sospechosos habituales":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/sospechosos.jpg");
-                    break;
-                case "El truco final ":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/el_truco_final.jpg");
-                    break;
-                case "Casablanca":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/casablanca.jpg");
-                    break;
-                case "Whiplash":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/whiplash.jpg");
-                    break;
-                case "Intocable":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/intocable.jpg");
-                    break;
-                case "La tumba de las luciérnagas":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/las_tumbas_de_las_luciernagas.jpg");
-                    break;
-                case "Hasta que llegó su hora":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/hasta_que_llego_su_hora.jpg");
-                    break;
-                case "La ventana indiscreta":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/la_ventana_indiscreta.jpg");
-                    break;
-                case "Alien":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/alien.jpg");
-                    break;
-                case "Luces de la ciudad":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/city_lights.jpg");
-                    break;
-                case "Cinema Paradiso":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/cinemaparadiso.jpg");
-                    break;
-                case "Apocalypse Now":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/apocalypsis_now.jpg");
-                    break;
-                case "Memento":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/mement.jpg");
-                    break;
-                case "En busca del arca perdida":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/indiana_jone.jpg");
-                    break;
-                case "Django desencadenado":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/django.jpg");
-                    break;
-                case "La vida de los otros":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/la_vida_de_los_otros.jpg");
-                    break;
-                case "WALL·E":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/walle.jpg");
-                    break;
-                case "Senderos de gloria":
-                    pictureBox1.Image = Image.FromFile(@"../../../Assets/Poster/senderos_de_gloria.jpg");
-                    break;
-
-                default:
-                    break;
-            }
+            pictureBox1.Image = Image.FromFile($"../../../Assets/Poster/{peliculas.NombrePoster}.jpg");;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 

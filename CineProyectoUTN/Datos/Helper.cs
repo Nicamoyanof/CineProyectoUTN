@@ -10,14 +10,26 @@ namespace CineProyectoUTN.Datos
 {
     internal class Helper
     {
-        SqlConnection conexion = new SqlConnection(Properties.Resources.StringConex);
+        private static Helper instancia;
+        private SqlConnection cnn;
 
-        public DataTable ConsultaSQLSP(string spNombre, List<Parametro> values)
+        private Helper()
+        {
+            cnn = new SqlConnection(@"Data Source=KELYX-KL3450\SQLEXPRESS;Initial Catalog=CINE;Integrated Security=True");
+        }
+
+        public static Helper ObtenerInstancia()
+        {
+            if (instancia == null)
+                instancia = new Helper();
+            return instancia;
+        }
+        public DataTable ConsultaSQL(string spNombre, List<Parametro> values)
         {
             DataTable tabla = new DataTable();
 
-            conexion.Open();
-            SqlCommand cmd = new SqlCommand(spNombre, conexion);
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(spNombre, cnn);
             cmd.CommandType = CommandType.StoredProcedure;
             if (values != null)
             {
@@ -27,35 +39,88 @@ namespace CineProyectoUTN.Datos
                 }
             }
             tabla.Load(cmd.ExecuteReader());
-            conexion.Close();
+            cnn.Close();
 
             return tabla;
         }
 
-        public DataTable consultaSql(string ConsultaSql)
+        public DataTable ConsultarSQLScript(string script)
         {
+
+            DataTable tabla = new DataTable();
+
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(script, cnn);
+
+            tabla.Load(cmd.ExecuteReader());
+            cnn.Close();
+
+            return tabla;
+
+        }
+
+        public int ConsultaEscalarSQL(string spNombre, string pOutNombre)
+        {
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(spNombre, cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter pOut = new SqlParameter();
+            pOut.ParameterName = pOutNombre;
+            pOut.DbType = DbType.Int32;
+            pOut.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(pOut);
+            cmd.ExecuteNonQuery();
+            cnn.Close();
+
+            return (int)pOut.Value;
+        }
+
+
+        public int EjecutarSQL(string strSql, List<Parametro> values)
+        {
+            int afectadas = 0;
+            SqlTransaction t = null;
+
             try
             {
-                conexion.Open();
-                DataTable tabla = new DataTable();
-                SqlCommand comando = new SqlCommand();
-                comando.Connection = conexion;
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = ConsultaSql;
-                tabla.Load(comando.ExecuteReader());
-                conexion.Close();
-                return tabla;
+                SqlCommand cmd = new SqlCommand();
+                cnn.Open();
+                t = cnn.BeginTransaction();
+                cmd.Connection = cnn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = strSql;
+                cmd.Transaction = t;
+
+                if (values != null)
+                {
+                    foreach (Parametro param in values)
+                    {
+                        cmd.Parameters.AddWithValue(param.Clave, param.Valor);
+                    }
+                }
+
+                afectadas = cmd.ExecuteNonQuery();
+                t.Commit();
             }
-            catch (Exception ex)
+            catch (SqlException)
             {
-                throw;
+                if (t != null) { t.Rollback(); }
             }
             finally
             {
-                if (conexion != null && conexion.State == ConnectionState.Open)
-                    conexion.Close();
+                if (cnn != null && cnn.State == ConnectionState.Open)
+                    cnn.Close();
+
             }
+
+            return afectadas;
         }
+
+        public SqlConnection ObtenerConexion()
+        {
+            return this.cnn;
+        }
+
     }
 
 }

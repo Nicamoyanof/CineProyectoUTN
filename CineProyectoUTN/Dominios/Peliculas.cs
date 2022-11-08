@@ -30,6 +30,8 @@ namespace CineProyectoUTN.Dominios
         public GeneroPelicula Genero { get; set; }
         public string Descripcion { get; set; }
 
+        public string NombrePoster { get; set; }
+
         public override string ToString()
         {
             return Nombre;

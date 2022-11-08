@@ -28,6 +28,9 @@
     <Compile Update="Formularios\FrmGastoPromedioxCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Formularios\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formularios\FrmPeliculas.cs">
       <SubType>Form</SubType>
     </Compile>

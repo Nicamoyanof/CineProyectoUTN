@@ -20,7 +20,7 @@ namespace CineProyectoUTN.Formularios
         public FrmClienteFuncion()
         {
             InitializeComponent();
-            helper = new Helper();
+            //helper = new Helper();
         }
 
         private void FrmClienteFuncion_Load(object sender, EventArgs e)
@@ -30,11 +30,11 @@ namespace CineProyectoUTN.Formularios
 
         public void CargarClienteFuncion()
         {
-            DataTable table = helper.ConsultaSQLSP("SP_CLIENTE_FUNCION", null);
-            foreach (DataRow dr in table.Rows)
-            {
-                dgvClienteFuncion.Rows.Add(dr["Nombre cliente"].ToString(), dr[" pelicula"].ToString(), dr["Cantidad de entradas compradas"].ToString(), dr["Horario funcion"].ToString());
-            }
+            //DataTable table =/* helper.ConsultaSQLSP("SP_CLIENTE_FUNCION", null)*/;
+            //foreach (DataRow dr in table.Rows)
+            //{
+            //    dgvClienteFuncion.Rows.Add(dr["Nombre cliente"].ToString(), dr[" pelicula"].ToString(), dr["Cantidad de entradas compradas"].ToString(), dr["Horario funcion"].ToString());
+            //}
         }
 
     }
