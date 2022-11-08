@@ -9,18 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CineProyectoUTN.Dominios;
 using CineProyectoUTN.Datos;
+using CineProyectoUTN.Fachada.Interfaz;
+using CineProyectoUTN.Fachada.Implementacion;
 
 namespace CineProyectoUTN.Formularios
 {
     public partial class FrmRecaudacionPelicula : Form
     {
-
-        Helper helper;
+        IPeliculasApi daoPelicula;
 
         public FrmRecaudacionPelicula()
         {
             InitializeComponent();
-            helper = new Helper();
+            daoPelicula = new PeliculasApiImp();
         }
 
         private void FrmRecaudacionPelicula_Load(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace CineProyectoUTN.Formularios
 
         public void CargarPeliculasRecaudacion()
         {
-            DataTable table = helper.ConsultaSQLSP("SP_TOTAL_RECAUDADO_POR_PELICULA", null);
+            DataTable table = daoPelicula.CargarPeliculasRecaudacion();
             foreach (DataRow dr in table.Rows)
             {
                 if (dr["Dinero recaudado"].ToString().Equals(string.Empty))

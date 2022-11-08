@@ -9,87 +9,61 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CineProyectoUTN.Dominios;
 using CineProyectoUTN.Datos;
+using CineProyectoUTN.Fachada.Interfaz;
+using CineProyectoUTN.Fachada.Implementacion;
 
 namespace CineProyectoUTN.Formularios
 {
     public partial class FrmPeliculas : Form
     {
 
-        List<Peliculas> lPeliculas = new List<Peliculas>();
-        List<GeneroPelicula> lGeneroPelicula = new List<GeneroPelicula>();
-        List<EdadesPermitidas> lEdadesPermitidas = new List<EdadesPermitidas>();
+        List<Peliculas> lPeliculas = null;
         Peliculas peliculaSeleccionada;
-        Helper helper;
+        IPeliculasApi dao;
+
 
         public FrmPeliculas()
         {
             InitializeComponent();
-            helper = Helper.ObtenerInstancia();
+            dao = new PeliculasApiImp();
         }
 
         private void FrmPeliculas_Load(object sender, EventArgs e)
         {
             CargarGeneros();
-            CargarEdades();
             CargarPeliculas();
             HabilitarEdicion(true);
         }
 
         private void recaudacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //FrmRecaudacionPelicula frmRecaudacionPelicula = new FrmRecaudacionPelicula();
-            //frmRecaudacionPelicula.Show();
+            FrmRecaudacionPelicula frmRecaudacionPelicula = new FrmRecaudacionPelicula();
+            frmRecaudacionPelicula.Show();
         }
 
         public void CargarPeliculas()
         {
             dgvPeliculas.Rows.Clear();
-            //DataTable table = helper.consultaSql("SELECT * FROM PELICULAS");
-            //foreach (DataRow dr in table.Rows)
-            //{
-            //    Peliculas pelicula = new Peliculas();
-            //    pelicula.Descripcion = dr["descripcion_pelicula"].ToString();
-            //    pelicula.Nombre = dr["nombre_pelicula"].ToString();
-            //    pelicula.Genero = lGeneroPelicula[(Convert.ToInt32(dr["id_genero_pelicula"].ToString())) - 1];
-            //    pelicula.EdadMinima = lEdadesPermitidas[(Convert.ToInt32(dr["id_edad_permitida"].ToString())) - 1];
-            //    pelicula.NombrePoster = dr["nombre_imagen"].ToString();
 
-            //    lPeliculas.Add(pelicula);
-            //    dgvPeliculas.Rows.Add(dr["id_pelicula"].ToString(), pelicula.Nombre, pelicula.Genero.ToString(), pelicula.EdadMinima.ToString());
+            lPeliculas = dao.ObtenerPeliculas();
 
-            //}
+            foreach (Peliculas pelicula in lPeliculas)
+            {
+                dgvPeliculas.Rows.Add(pelicula.IdPelicula, pelicula.Nombre, pelicula.Genero.ToString(), pelicula.EdadMinima.ToString());
+            }
         }
 
         public void CargarGeneros()
         {
-            //DataTable table = helper.consultaSql("SELECT * FROM Generos_peliculas");
-            //foreach (DataRow dr in table.Rows)
-            //{
-            //    GeneroPelicula genero = new GeneroPelicula();
-            //    genero.Nombre = dr["nombre_genero"].ToString();
-            //    genero.Descripcion = dr["descripcion_genero"].ToString();
 
-            //    lGeneroPelicula.Add(genero);
+            List<GeneroPelicula> lGeneros = dao.ObtenerGeneros();
 
-            //    cboGeneros.Items.Add(genero.ToString());
-
-            //}
+            foreach (GeneroPelicula genero in lGeneros)
+            {
+                cboGeneros.Items.Add(genero.ToString());
+            }
         }
 
-        public void CargarEdades()
-        {
-            //DataTable table =/* helper.consultaSql("SELECT * FROM Edades_permitidas")*/;
-            //foreach (DataRow dr in table.Rows)
-            //{
-            //    EdadesPermitidas edades = new EdadesPermitidas();
-            //    edades.Nombre = dr["nombre_edad"].ToString();
-            //    edades.Edad = int.Parse(dr["minimo_edad"].ToString());
-
-            //    lEdadesPermitidas.Add(edades);
-
-
-            //}
-        }
 
         private void dgvPeliculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -156,7 +130,7 @@ namespace CineProyectoUTN.Formularios
 
         private void SeleccionarPoster(Peliculas peliculas)
         {
-            pictureBox1.Image = Image.FromFile($"../../../Assets/Poster/{peliculas.NombrePoster}.jpg");;
+            pictureBox1.Image = Image.FromFile($"../../../Assets/Poster/{peliculas.NombrePoster}.jpg"); ;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 

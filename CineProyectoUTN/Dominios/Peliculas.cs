@@ -24,7 +24,7 @@ namespace CineProyectoUTN.Dominios
             Genero = new GeneroPelicula();
             Descripcion = "sin descripcion";
         }
-
+        public int IdPelicula { get; set; }
         public string Nombre { get; set; }
         public EdadesPermitidas EdadMinima { get; set; }
         public GeneroPelicula Genero { get; set; }

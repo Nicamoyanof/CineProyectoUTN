@@ -19,5 +19,9 @@ namespace CineProyectoUTN.Datos.Interfaz
         List<GeneroPelicula> ObtenerGeneros();
         List<EdadesPermitidas> ObtenerEdadesPermitidas();
 
+        Peliculas CargarPeliculaPorId(int id);
+
+        DataTable CargarPeliculasRecaudacion();
+
     }
 }

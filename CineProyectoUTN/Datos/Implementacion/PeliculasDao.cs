@@ -10,7 +10,7 @@ using CineProyectoUTN.Datos.Interfaz;
 
 namespace CineProyectoUTN.Datos.Implementacion
 {
-    internal class PeliculasDao: IDaoPeliculas
+    internal class PeliculasDao : IDaoPeliculas
     {
 
 
@@ -22,6 +22,7 @@ namespace CineProyectoUTN.Datos.Implementacion
             foreach (DataRow dr in table.Rows)
             {
                 Peliculas pelicula = new Peliculas();
+                pelicula.IdPelicula = int.Parse(dr["id_pelicula"].ToString());
                 pelicula.Descripcion = dr["descripcion_pelicula"].ToString();
                 pelicula.Nombre = dr["nombre_pelicula"].ToString();
                 pelicula.Genero = ObtenerGeneros()[(Convert.ToInt32(dr["id_genero_pelicula"].ToString())) - 1];
@@ -81,6 +82,30 @@ namespace CineProyectoUTN.Datos.Implementacion
         public bool Borrar(int nro)
         {
             throw new NotImplementedException();
+        }
+
+        public Peliculas CargarPeliculaPorId(int id)
+        {
+            DataTable table = Helper.ObtenerInstancia().ConsultarSQLScript("SELECT * FROM Peliculas WHERE id_pelicula=" + id);
+
+            Peliculas pelicula = new Peliculas();
+
+            foreach (DataRow dr in table.Rows)
+            {
+                pelicula.Descripcion = dr["descripcion_pelicula"].ToString();
+                pelicula.Nombre = dr["nombre_pelicula"].ToString();
+                pelicula.Genero = ObtenerGeneros()[(Convert.ToInt32(dr["id_genero_pelicula"].ToString())) - 1];
+                pelicula.EdadMinima = ObtenerEdadesPermitidas()[(Convert.ToInt32(dr["id_edad_permitida"].ToString())) - 1];
+            }
+
+            return pelicula;
+        }
+
+        public DataTable CargarPeliculasRecaudacion()
+        {
+
+            return Helper.ObtenerInstancia().ConsultaSQL("SP_TOTAL_RECAUDADO_POR_PELICULA", null);
+
         }
     }
 }

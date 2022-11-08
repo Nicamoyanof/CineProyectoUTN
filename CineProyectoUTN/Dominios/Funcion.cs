@@ -9,23 +9,25 @@ namespace CineProyectoUTN.Dominios
     public class Funciones
     {
 
-        public Funciones(Peliculas pelicula, Salas sala, DateTime horario)
+        public Funciones(int idFuncion, Peliculas pelicula, Salas sala, DateTime horario)
         {
+            IdFuncion = idFuncion;
             Pelicula = pelicula;
             Sala = sala;
             Horario = horario;
         }
         public Funciones()
         {
+            IdFuncion = 0;
             Pelicula = new Peliculas();
             Sala = new Salas();
             Horario = new DateTime();
         }
 
+        public int IdFuncion { get; set; }
         public Peliculas Pelicula { get; set; }
         public Salas Sala { get; set; }
         public DateTime Horario { get; set; }
-
 
     }
 }
